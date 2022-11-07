@@ -7,6 +7,7 @@ public class PushAbility : Ability
     public GameObject glove;
     public LayerMask groundMask;
     private GameObject closestCar;
+    private GameObject lastTarget;
 
     public float range;
     public float angle = 60;
@@ -28,6 +29,7 @@ public class PushAbility : Ability
     {
         base.LogicUpdate();
 
+        lastTarget = closestCar;
         closestCar = null;
         closestCar = GetClosestCar();
         if (closestCar)
@@ -44,7 +46,7 @@ public class PushAbility : Ability
     }
 
     public override void Activated()
-    {
+     {
         base.Activated();
 
         if (readytoThrow)
@@ -73,13 +75,26 @@ public class PushAbility : Ability
         {
             Vector3 dirToTarget = (closestCar.transform.position + Vector3.up - gunTip.position).normalized;
 
+            Quaternion throwRotation = Quaternion.Euler(dirToTarget);
+
+            GameObject projectile = Instantiate(glove, gunTip.position, throwRotation);
+            projectile.transform.parent = abilityController.abilityContainer;
+
+            GloveAddon projectileScript = projectile.GetComponentInChildren<GloveAddon>();
+            projectileScript.target = closestCar.transform;
+        }
+        else if(lastTarget != null)
+        {
+            Vector3 dirToTarget = (lastTarget.transform.position + Vector3.up - gunTip.position).normalized;
+
             Quaternion throwRotation = Quaternion.Euler(dirToTarget.x, 90, 90);
 
             GameObject projectile = Instantiate(glove, gunTip.position, throwRotation);
 
             GloveAddon projectileScript = projectile.GetComponentInChildren<GloveAddon>();
-            projectileScript.target = closestCar.transform;
+            projectileScript.target = lastTarget.transform;
         }
+        readytoThrow = true;
         AbilityEnded(false);
     }    
 
@@ -94,6 +109,7 @@ public class PushAbility : Ability
             if (car == carController.transform) continue;
 
             Vector3 direction = (car.transform.position - carController.transform.position).normalized;
+            float angleT = Vector3.Angle(carController.transform.forward, direction);
             bool isWithinView = Vector3.Angle(carController.transform.forward, direction) <= angle;
 
             float distance = Vector3.Distance(car.transform.position, carController.transform.position);
