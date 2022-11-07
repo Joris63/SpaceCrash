@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ForceField
-  m_Shader: {fileID: -6465566751694194690, guid: 3f52c0fecdbcb9a43bba5b928d5618cd,
+  m_Shader: {fileID: -6465566751694194690, guid: a385024c8d28f1346870e2381625c764,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -39,7 +39,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: e03411a4ac1aa2d40a8eab70cddc2aee, type: 3}
+        m_Texture: {fileID: 2800000, guid: 5b39d2edee1161a4dbddda9dfc9db07b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ScaneLineTexture:
@@ -63,7 +63,7 @@ Material:
     - _EnableRimGlow: 1
     - _EnableScanLine: 1
     - _Fill: 0.01
-    - _FresnelPower: 3
+    - _FresnelPower: 7
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RimGlowNoiseDensity: 4
@@ -73,10 +73,10 @@ Material:
     - _ScanSpeed: 0.8
     - _Strength: 0
     m_Colors:
-    - _BackColor: {r: 0, g: 0.36078432, b: 1, a: 1}
+    - _BackColor: {r: 0, g: 0, b: 0, a: 1}
     - _Color: {r: 0, g: 0, b: 0, a: 0}
-    - _FresnelColor: {r: 4.919066, g: 0, b: 27.62307, a: 1}
-    - _FrontColor: {r: 0, g: 0.35949564, b: 1, a: 1}
+    - _FresnelColor: {r: 36.878963, g: 36.878963, b: 36.878963, a: 1}
+    - _FrontColor: {r: 0, g: 0, b: 0, a: 1}
     - _RimColor: {r: 6.602789, g: 3.664375, b: 0.1728479, a: 1}
     - _RimPower: {r: 1.5, g: 5, b: 0, a: 0}
   m_BuildTextureStacks: []
