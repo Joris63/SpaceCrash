@@ -788,7 +788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1236794452}
   - component: {fileID: 1236794451}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gravity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -946,7 +946,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!4 &128795322306620620
 Transform:
   m_ObjectHideFlags: 0
@@ -1004,7 +1004,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1052585579352095028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 94.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1104,7 +1104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 418933366692946830}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Arena 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1320,7 +1320,7 @@ GameObject:
   - component: {fileID: 4190199015888845654}
   - component: {fileID: 1592393452600940062}
   - component: {fileID: 4190199015888845655}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Inside
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1515,7 +1515,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4581101286893089908}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3212433, y: -27.51, z: 0.5958662}
+  m_LocalPosition: {x: -1.3212433, y: -43.67, z: 0.5958662}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1590,7 +1590,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &4581101286893089909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2336,13 +2336,28 @@ GameObject:
   - component: {fileID: 1968700809530982960}
   - component: {fileID: 6283250149678194946}
   - component: {fileID: 1984032655542306694}
-  m_Layer: 0
+  - component: {fileID: 7796026612751161692}
+  m_Layer: 8
   m_Name: Outside
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &7796026612751161692
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7796026612751161691}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2681861036019717593, guid: 9ba8332546b0e0743835a30217cb0345, type: 3}
 --- !u!4 &8305939504512768412
 Transform:
   m_ObjectHideFlags: 0
