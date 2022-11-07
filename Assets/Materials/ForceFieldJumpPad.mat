@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ForceField
-  m_Shader: {fileID: -6465566751694194690, guid: a385024c8d28f1346870e2381625c764,
+  m_Name: ForceFieldJumpPad
+  m_Shader: {fileID: -6465566751694194690, guid: 3ee02c90ffb5e8046a6095ae20aabd7d,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -46,6 +46,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: e03411a4ac1aa2d40a8eab70cddc2aee, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_8442e51456bf497aa135b65fd2570ec0_Out_0:
+        m_Texture: {fileID: 2800000, guid: e3dbdd8b9b8f7a147af185ff7a18b745, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -64,6 +68,7 @@ Material:
     - _EnableScanLine: 1
     - _Fill: 0.01
     - _FresnelPower: 7
+    - _ParticleFrequency: 2
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RimGlowNoiseDensity: 4
@@ -72,13 +77,16 @@ Material:
     - _ScanSize: 0.8
     - _ScanSpeed: 0.8
     - _Strength: 0
-    - _VertexFrequency: 1
+    - _VertexFrequency: 2
     m_Colors:
-    - _BackColor: {r: 0, g: 0, b: 0, a: 1}
+    - _BackColor: {r: 1, g: 0, b: 0, a: 1}
+    - _BaseColor: {r: 0, g: 0, b: 0, a: 1}
     - _Color: {r: 0, g: 0, b: 0, a: 0}
     - _FresnelColor: {r: 36.878963, g: 36.878963, b: 36.878963, a: 1}
-    - _FrontColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FrontColor: {r: 1, g: 0, b: 0, a: 1}
+    - _MainColor: {r: 0.03137255, g: 0, b: 0.7490196, a: 1}
     - _RimColor: {r: 6.602789, g: 3.664375, b: 0.1728479, a: 1}
     - _RimPower: {r: 1.5, g: 5, b: 0, a: 0}
-    - _VertexAmount: {r: 1, g: 1, b: 1, a: 0}
+    - _VertexAmount: {r: 0.5, g: 0.5, b: 0.5, a: 0}
+    - _VertexDisplacement: {r: 0.5, g: 0.5, b: 0.5, a: 0}
   m_BuildTextureStacks: []

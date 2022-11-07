@@ -54,8 +54,7 @@ public class CarConfig
     public float driftSidewaysFriction = 1.5f;
 
     [Header("Aerial Settings")]
-    public AnimationCurve torqueCurve = AnimationCurve.Linear(0.0f, 0.0f, 5.0f, 1.0f);
-    public AnimationCurve aerialDragCurve = AnimationCurve.Linear(0.0f, 0.0f, 5.0f, 1.0f);
+    public float rotateDuration = 1f;
 
     [Header("Other Settings")]
     public float downForce = 5f;
@@ -107,11 +106,12 @@ public class CarController : MonoBehaviour
     private float revs;
     private Vector3 originalCenterOfMass;
     private float oldRotation;
-    private float oldDrag;
     private float oldExtremumSlip;
     private float oldStiffness;
     private float carAngle;
     private float driftReleased;
+
+    private bool isRotating = false;
 
     // ---------------
     // Input variables & update method
@@ -146,8 +146,6 @@ public class CarController : MonoBehaviour
         // Set center of mass
         originalCenterOfMass = rb.centerOfMass;
         rb.centerOfMass = COM.localPosition;
-
-        oldDrag = rb.drag;
 
         //Copy wheels in public property
         wheels = new Wheel[4] {
@@ -241,15 +239,15 @@ public class CarController : MonoBehaviour
         HandleMove();
     }
 
-    private bool CheckIfGrounded()
+    private bool CheckIfGrounded(bool fullyGrounded = true)
     {
-        bool result = true;
+        bool result = fullyGrounded;
 
         foreach (Wheel wheel in wheels)
         {
             if (!wheel.isGrounded)
             {
-                result = false;
+                result = !fullyGrounded;
                 break;
             }
         }
@@ -315,14 +313,8 @@ public class CarController : MonoBehaviour
 
         ApplyDrift();
 
-        if (!isGrounded)
-        {
-            StabilizeCar();
-        }
-        else
-        {
-            rb.drag = oldDrag;
-        }
+
+        StabilizeCar();
 
         if (!isGrounded && carAngle > .85f && unflipCarInput)
         {
@@ -338,26 +330,43 @@ public class CarController : MonoBehaviour
 
     private void StabilizeCar()
     {
-        float dt = Time.fixedDeltaTime;
-        /*
-        bool isKeyboard = player == null || player.deviceType == "Keyboard";
+        if (!isGrounded && !isRotating)
+        {
+            StartCoroutine("RotateCarUpright");
+        }
+        
+        if(CheckIfGrounded(false) && isRotating)
+        {
+            isRotating = false;
+            StopCoroutine("RotateCarUpright");
+        }
+    }
 
-        float rollRotation = (isKeyboard ? rollInput : horizontalInput) * carConfig.torqueCurve.Evaluate(rb.angularVelocity.z) * dt;
-        float pitchRotation = (isKeyboard ? horizontalInput : verticalInput) * carConfig.torqueCurve.Evaluate(rb.angularVelocity.x) / 2 * dt;
-        float yawRotation = (isKeyboard ? verticalInput : horizontalInput) * carConfig.torqueCurve.Evaluate(rb.angularVelocity.y) * dt;
+    
 
+    private IEnumerator RotateCarUpright()
+    {
+        isRotating = true;
 
-        rb.AddTorque(transform.forward * rollRotation, ForceMode.VelocityChange);
-        rb.AddTorque(transform.right * yawRotation, ForceMode.VelocityChange);
-        rb.AddTorque(transform.up * pitchRotation, ForceMode.VelocityChange);
-        */
+        float timeElapsed = 0;
+        Quaternion startRotation = transform.rotation;
+        Quaternion targetRotation = Quaternion.LookRotation(transform.forward, -downDirection);
+
+        while (timeElapsed < carConfig.rotateDuration)
+        {
+            transform.rotation = Quaternion.Slerp(startRotation, targetRotation, timeElapsed / carConfig.rotateDuration);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        isRotating = false;
     }
 
     private IEnumerator FlipCar()
     {
         float timeElapsed = 0;
         Vector3 startPosition = transform.position;
-        Vector3 targetPosition = transform.position + Vector3.up * 1.5f;
+        Vector3 targetPosition = transform.position - downDirection * 1.5f;
         Quaternion startRotation = transform.rotation;
         Quaternion targetRotation = transform.rotation * Quaternion.Euler(0, 0, 180);
 

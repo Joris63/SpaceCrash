@@ -15,7 +15,7 @@ public class GravityController : MonoBehaviour
         rigidbodies = FindObjectsOfType<Rigidbody>().ToList();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         ApplyGravity();
     }
