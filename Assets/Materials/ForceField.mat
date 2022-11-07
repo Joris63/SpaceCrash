@@ -63,7 +63,7 @@ Material:
     - _EnableRimGlow: 1
     - _EnableScanLine: 1
     - _Fill: 0.01
-    - _FresnelPower: 1
+    - _FresnelPower: 7
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RimGlowNoiseDensity: 4
@@ -73,10 +73,10 @@ Material:
     - _ScanSpeed: 0.8
     - _Strength: 0
     m_Colors:
-    - _BackColor: {r: 1, g: 0.49411765, b: 0, a: 1}
+    - _BackColor: {r: 0, g: 0, b: 0, a: 1}
     - _Color: {r: 0, g: 0, b: 0, a: 0}
-    - _FresnelColor: {r: 27.623068, g: 0.2242002, b: 0, a: 1}
-    - _FrontColor: {r: 1, g: 0.4941396, b: 0, a: 1}
+    - _FresnelColor: {r: 36.878963, g: 36.878963, b: 36.878963, a: 1}
+    - _FrontColor: {r: 0, g: 0, b: 0, a: 1}
     - _RimColor: {r: 6.602789, g: 3.664375, b: 0.1728479, a: 1}
     - _RimPower: {r: 1.5, g: 5, b: 0, a: 0}
   m_BuildTextureStacks: []

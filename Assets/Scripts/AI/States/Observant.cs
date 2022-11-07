@@ -55,7 +55,7 @@ public class Observant : BaseState
             {
                 Vector3 crossDifference = Vector3.Cross(hit.normal, carAI.transform.up);
                 controller.verticalInput = Mathf.Abs(crossDifference.x) > 0.15f ? Mathf.Sign(crossDifference.x) : 0f;
-                controller.rollInput = Mathf.Abs(crossDifference.z) > 0.15f ? Mathf.Sign(crossDifference.z) : 0f;
+                //controller.rollInput = Mathf.Abs(crossDifference.z) > 0.15f ? Mathf.Sign(crossDifference.z) : 0f;
                 return;
             }
         }

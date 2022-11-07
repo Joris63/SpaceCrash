@@ -98,6 +98,8 @@ public class CarController : MonoBehaviour
     private ParticleSystem ps;
     private Wheel[] wheels;
 
+    private Vector3 downDirection;
+
     private float currentTorque;
     private float currentSteerAngle;
     private int currentGear;
@@ -115,7 +117,6 @@ public class CarController : MonoBehaviour
     // Input variables & update method
     public float verticalInput { get; set; }
     public float horizontalInput { get; set; }
-    public float rollInput { get; set; }
     public bool handBrakeInput { get; set; }
     public bool unflipCarInput { get; set; }
 
@@ -130,7 +131,6 @@ public class CarController : MonoBehaviour
     {
         verticalInput = vertical;
         horizontalInput = horizontal;
-        rollInput = roll;
         handBrakeInput = handBrake;
         unflipCarInput = unflip;
     }
@@ -188,6 +188,10 @@ public class CarController : MonoBehaviour
 
     private void Update()
     {
+        downDirection = -(GravityController.main.transform.position - transform.position).normalized;
+
+        Debug.DrawRay(GravityController.main.transform.position, downDirection * 10, Color.blue);
+
         if (ps)
         {
             ps.transform.localRotation = Quaternion.LookRotation(ps.transform.parent.InverseTransformDirection(Vector3.up), ps.transform.up);
@@ -197,14 +201,6 @@ public class CarController : MonoBehaviour
         {
             return;
         }
-
-        /*
-        if (gameObject.transform.position.y < -10f)
-        {
-            isDestroyed = true;
-            OnDestroyed();
-        }
-        */
 
         for (int i = 0; i < wheels.Length; i++)
         {
@@ -321,8 +317,7 @@ public class CarController : MonoBehaviour
 
         if (!isGrounded)
         {
-            ApplyAerialMovement();
-            rb.drag = carConfig.aerialDragCurve.Evaluate(convertedCurrentSpeed / 100f);
+            StabilizeCar();
         }
         else
         {
@@ -341,10 +336,10 @@ public class CarController : MonoBehaviour
         TractionControl();
     }
 
-    private void ApplyAerialMovement()
+    private void StabilizeCar()
     {
         float dt = Time.fixedDeltaTime;
-
+        /*
         bool isKeyboard = player == null || player.deviceType == "Keyboard";
 
         float rollRotation = (isKeyboard ? rollInput : horizontalInput) * carConfig.torqueCurve.Evaluate(rb.angularVelocity.z) * dt;
@@ -355,6 +350,7 @@ public class CarController : MonoBehaviour
         rb.AddTorque(transform.forward * rollRotation, ForceMode.VelocityChange);
         rb.AddTorque(transform.right * yawRotation, ForceMode.VelocityChange);
         rb.AddTorque(transform.up * pitchRotation, ForceMode.VelocityChange);
+        */
     }
 
     private IEnumerator FlipCar()
@@ -410,7 +406,7 @@ public class CarController : MonoBehaviour
     {
         Transform wheelContainer = levelManager != null ? levelManager.wheelContainer : null;
 
-        wheel.wheelView.SetParent(wheelContainer);
+        wheel.wheelView.SetParent(wheelContainer, true);
         wheel.wheelCollider.gameObject.SetActive(false);
 
         Rigidbody wheelRb = wheel.wheelView.gameObject.AddComponent<Rigidbody>();
