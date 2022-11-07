@@ -84,7 +84,7 @@ Material:
     - _Color: {r: 0, g: 0, b: 0, a: 0}
     - _FresnelColor: {r: 36.878963, g: 36.878963, b: 36.878963, a: 1}
     - _FrontColor: {r: 1, g: 0, b: 0, a: 1}
-    - _MainColor: {r: 0.03137255, g: 0, b: 0.7490196, a: 1}
+    - _MainColor: {r: 0.7044003, g: 0, b: 766.9961, a: 1}
     - _RimColor: {r: 6.602789, g: 3.664375, b: 0.1728479, a: 1}
     - _RimPower: {r: 1.5, g: 5, b: 0, a: 0}
     - _VertexAmount: {r: 0.5, g: 0.5, b: 0.5, a: 0}
