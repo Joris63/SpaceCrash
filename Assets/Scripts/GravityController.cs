@@ -7,7 +7,7 @@ public class GravityController : MonoBehaviour
 {
     public static GravityController main;
 
-    private List<Rigidbody> rigidbodies = new List<Rigidbody>();
+    public List<Rigidbody> rigidbodies { get; private set; } = new List<Rigidbody>();
 
     private void Awake()
     {
