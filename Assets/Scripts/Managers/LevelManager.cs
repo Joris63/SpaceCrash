@@ -220,6 +220,8 @@ public class LevelManager : MonoBehaviour
         CarController car = Instantiate(selectedCar, spawnPos, Quaternion.LookRotation((Vector3.zero - spawnPos), transform.up), carParentTransform).GetComponent<CarController>();
         car.gameObject.name = isPlayer ? "Player " + (i + 1) : "Bot " + (i + 1);
 
+        GravityController.main.AddRigidbody(car.GetComponent<Rigidbody>());
+
         // Set random color
         int colorIndex = Random.Range(0, carColors.Length);
         Material selectedColor = carColors[colorIndex];

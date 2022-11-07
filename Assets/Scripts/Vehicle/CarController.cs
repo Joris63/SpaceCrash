@@ -417,8 +417,11 @@ public class CarController : MonoBehaviour
         MeshCollider wheelMesh = wheel.wheelView.GetComponentInChildren<MeshRenderer>().gameObject.AddComponent<MeshCollider>();
 
         wheelRb.mass = 50;
+        wheelRb.useGravity = false;
         wheelRb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
         wheelMesh.convex = true;
+
+        GravityController.main.AddRigidbody(wheelRb);
 
         wheelRb.AddForce((UnityEngine.Random.onUnitSphere.normalized * 10) + rb.velocity, ForceMode.VelocityChange);
     }
