@@ -1641,7 +1641,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 305320891}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.21, y: -34.88, z: 0.5958662}
+  m_LocalPosition: {x: -23.4, y: -17.24, z: 0.5958662}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4462,7 +4462,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106479575}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.81, y: -37.26, z: 0.5958662}
+  m_LocalPosition: {x: 23.82, y: -23.25, z: 0.5958662}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4684,6 +4684,53 @@ WheelCollider:
     m_AsymptoteValue: 3
     m_Stiffness: 1
   m_Enabled: 1
+--- !u!1 &1147348190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1147348192}
+  - component: {fileID: 1147348191}
+  m_Layer: 0
+  m_Name: AudioController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1147348191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147348190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af1ee065353a61b4d98d318d3d81126b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carSoundObjectPrefab: {fileID: 0}
+  oneShotObjectPrefab: {fileID: 0}
+  carContainer: {fileID: 0}
+--- !u!4 &1147348192
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147348190}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1211274010
 GameObject:
   m_ObjectHideFlags: 0
@@ -7055,8 +7102,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d65fa806536100b439a8032da8c3d850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  influenceRange: 20
-  intensity: 0
+  influenceRange: 100
+  intensity: 4
+  activationTime: 2
+  pullTime: 4
+  explosionRadius: 10
+  explosionStrength: 100
+  explosionDamage: 50
+  explosionAudioClip: {fileID: 8300000, guid: f9e7ad22f06c5dc47a550c99bd005a53, type: 3}
+  explosionSoundVolume: 1
+  activate: 0
 --- !u!4 &2055488527
 Transform:
   m_ObjectHideFlags: 0
@@ -7065,7 +7120,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2055488525}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.97, y: -38.3, z: 8.14}
+  m_LocalPosition: {x: 0.97, y: -17.61, z: 8.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
