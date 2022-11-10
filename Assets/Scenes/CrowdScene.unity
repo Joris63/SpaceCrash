@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 706214}
   - component: {fileID: 706216}
   - component: {fileID: 706215}
+  - component: {fileID: 706217}
   m_Layer: 0
   m_Name: Icosphere.003 (2)
   m_TagString: Untagged
@@ -149,7 +150,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706213}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -337, y: -0, z: -270}
+  m_LocalPosition: {x: -368, y: 0, z: -270}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -206,6 +207,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706213}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &706217
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706213}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &28211877
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,6 +238,7 @@ GameObject:
   - component: {fileID: 28211878}
   - component: {fileID: 28211880}
   - component: {fileID: 28211879}
+  - component: {fileID: 28211881}
   m_Layer: 0
   m_Name: Icosphere (6)
   m_TagString: Untagged
@@ -289,6 +311,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28211877}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &28211881
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28211877}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &29141005
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,6 +342,7 @@ GameObject:
   - component: {fileID: 29141006}
   - component: {fileID: 29141008}
   - component: {fileID: 29141007}
+  - component: {fileID: 29141009}
   m_Layer: 0
   m_Name: Icosphere.001 (7)
   m_TagString: Untagged
@@ -372,6 +415,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29141005}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &29141009
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29141005}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &50755217
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,6 +446,7 @@ GameObject:
   - component: {fileID: 50755218}
   - component: {fileID: 50755220}
   - component: {fileID: 50755219}
+  - component: {fileID: 50755221}
   m_Layer: 0
   m_Name: Icosphere.004 (3)
   m_TagString: Untagged
@@ -398,7 +462,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50755217}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -155, y: -0, z: -65}
+  m_LocalPosition: {x: -155, y: -0, z: -56}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -455,6 +519,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50755217}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &50755221
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50755217}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &86764576
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,6 +550,7 @@ GameObject:
   - component: {fileID: 86764577}
   - component: {fileID: 86764579}
   - component: {fileID: 86764578}
+  - component: {fileID: 86764580}
   m_Layer: 0
   m_Name: Icosphere (7)
   m_TagString: Untagged
@@ -538,6 +623,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 86764576}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &86764580
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86764576}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &96851296
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,6 +654,7 @@ GameObject:
   - component: {fileID: 96851297}
   - component: {fileID: 96851299}
   - component: {fileID: 96851298}
+  - component: {fileID: 96851300}
   m_Layer: 0
   m_Name: Icosphere (4)
   m_TagString: Untagged
@@ -564,7 +670,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96851296}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -216, y: 0, z: -59}
+  m_LocalPosition: {x: -231, y: -0, z: -59}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -621,6 +727,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96851296}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &96851300
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96851296}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &122208356
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,6 +758,7 @@ GameObject:
   - component: {fileID: 122208357}
   - component: {fileID: 122208359}
   - component: {fileID: 122208358}
+  - component: {fileID: 122208360}
   m_Layer: 0
   m_Name: Icosphere.004 (3)
   m_TagString: Untagged
@@ -647,7 +774,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122208356}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -175, y: -0, z: -37}
+  m_LocalPosition: {x: -186, y: -0, z: -22}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -704,6 +831,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122208356}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &122208360
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122208356}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &122539822
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,6 +862,7 @@ GameObject:
   - component: {fileID: 122539823}
   - component: {fileID: 122539825}
   - component: {fileID: 122539824}
+  - component: {fileID: 122539826}
   m_Layer: 0
   m_Name: Icosphere.003 (2)
   m_TagString: Untagged
@@ -730,7 +878,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122539822}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -250, y: 5, z: -237}
+  m_LocalPosition: {x: -261, y: 5, z: -237}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -787,6 +935,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122539822}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &122539826
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122539822}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &124250683
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,6 +966,7 @@ GameObject:
   - component: {fileID: 124250684}
   - component: {fileID: 124250686}
   - component: {fileID: 124250685}
+  - component: {fileID: 124250687}
   m_Layer: 0
   m_Name: Icosphere.004 (6)
   m_TagString: Untagged
@@ -870,6 +1039,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 124250683}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &124250687
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124250683}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &155143472
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,6 +1070,7 @@ GameObject:
   - component: {fileID: 155143473}
   - component: {fileID: 155143475}
   - component: {fileID: 155143474}
+  - component: {fileID: 155143476}
   m_Layer: 0
   m_Name: Icosphere.003 (6)
   m_TagString: Untagged
@@ -896,7 +1086,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155143472}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -264, y: 0, z: -397}
+  m_LocalPosition: {x: -281, y: -0, z: -405}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -953,6 +1143,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155143472}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &155143476
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155143472}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &155665058
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,6 +1207,7 @@ GameObject:
   - component: {fileID: 163604098}
   - component: {fileID: 163604100}
   - component: {fileID: 163604099}
+  - component: {fileID: 163604101}
   m_Layer: 0
   m_Name: Icosphere (3)
   m_TagString: Untagged
@@ -1012,7 +1223,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 163604097}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -272, y: -0, z: -157}
+  m_LocalPosition: {x: -297, y: -0, z: -148}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1069,6 +1280,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 163604097}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &163604101
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163604097}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &182997985
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,6 +1311,7 @@ GameObject:
   - component: {fileID: 182997986}
   - component: {fileID: 182997988}
   - component: {fileID: 182997987}
+  - component: {fileID: 182997989}
   m_Layer: 0
   m_Name: Icosphere.003 (5)
   m_TagString: Untagged
@@ -1095,7 +1327,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 182997985}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 310, y: -0, z: -179}
+  m_LocalPosition: {x: 323.8, y: 0, z: -174.1}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1152,6 +1384,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 182997985}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &182997989
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182997985}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &232616368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,6 +1415,7 @@ GameObject:
   - component: {fileID: 232616369}
   - component: {fileID: 232616371}
   - component: {fileID: 232616370}
+  - component: {fileID: 232616372}
   m_Layer: 0
   m_Name: Icosphere.001 (2)
   m_TagString: Untagged
@@ -1235,6 +1488,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 232616368}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &232616372
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232616368}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &240531466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,6 +1519,7 @@ GameObject:
   - component: {fileID: 240531467}
   - component: {fileID: 240531469}
   - component: {fileID: 240531468}
+  - component: {fileID: 240531470}
   m_Layer: 0
   m_Name: Icosphere (2)
   m_TagString: Untagged
@@ -1261,7 +1535,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240531466}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 232, y: -0, z: -76}
+  m_LocalPosition: {x: 236, y: -0, z: -70}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1318,6 +1592,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240531466}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &240531470
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240531466}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &283321615
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,6 +1623,7 @@ GameObject:
   - component: {fileID: 283321616}
   - component: {fileID: 283321618}
   - component: {fileID: 283321617}
+  - component: {fileID: 283321619}
   m_Layer: 0
   m_Name: Icosphere.001 (2)
   m_TagString: Untagged
@@ -1344,7 +1639,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283321615}
   m_LocalRotation: {x: -0.39837503, y: 0.58420664, z: 0.5842066, w: 0.39837494}
-  m_LocalPosition: {x: 252, y: 6, z: -117}
+  m_LocalPosition: {x: 262.5, y: 6, z: -112.3}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1401,6 +1696,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283321615}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &283321619
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283321615}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &306504471
 GameObject:
   m_ObjectHideFlags: 0
@@ -1465,6 +1780,7 @@ GameObject:
   - component: {fileID: 308696450}
   - component: {fileID: 308696452}
   - component: {fileID: 308696451}
+  - component: {fileID: 308696453}
   m_Layer: 0
   m_Name: Icosphere.004 (4)
   m_TagString: Untagged
@@ -1480,7 +1796,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308696449}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -339, y: -0, z: -365}
+  m_LocalPosition: {x: -363, y: -0, z: -386}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1537,6 +1853,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308696449}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &308696453
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308696449}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &324374735
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,6 +1884,7 @@ GameObject:
   - component: {fileID: 324374736}
   - component: {fileID: 324374738}
   - component: {fileID: 324374737}
+  - component: {fileID: 324374739}
   m_Layer: 0
   m_Name: Icosphere.001 (6)
   m_TagString: Untagged
@@ -1620,6 +1957,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 324374735}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &324374739
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324374735}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &327476785
 GameObject:
   m_ObjectHideFlags: 0
@@ -1631,6 +1988,7 @@ GameObject:
   - component: {fileID: 327476786}
   - component: {fileID: 327476788}
   - component: {fileID: 327476787}
+  - component: {fileID: 327476789}
   m_Layer: 0
   m_Name: Icosphere.003 (5)
   m_TagString: Untagged
@@ -1646,7 +2004,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327476785}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 258, y: -0, z: -227}
+  m_LocalPosition: {x: 264, y: -0, z: -227}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1703,6 +2061,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327476785}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &327476789
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327476785}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1832,6 +2210,7 @@ GameObject:
   - component: {fileID: 351741309}
   - component: {fileID: 351741311}
   - component: {fileID: 351741310}
+  - component: {fileID: 351741312}
   m_Layer: 0
   m_Name: Icosphere.004 (2)
   m_TagString: Untagged
@@ -1847,7 +2226,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 351741308}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -318, y: 0, z: -172}
+  m_LocalPosition: {x: -347, y: 0, z: -165}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1904,6 +2283,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 351741308}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &351741312
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351741308}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &378797638
 GameObject:
   m_ObjectHideFlags: 0
@@ -1915,6 +2314,7 @@ GameObject:
   - component: {fileID: 378797639}
   - component: {fileID: 378797641}
   - component: {fileID: 378797640}
+  - component: {fileID: 378797642}
   m_Layer: 0
   m_Name: Icosphere.004 (4)
   m_TagString: Untagged
@@ -1930,7 +2330,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 378797638}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -289, y: -0, z: -338}
+  m_LocalPosition: {x: -305, y: -0, z: -342}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1987,6 +2387,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 378797638}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &378797642
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378797638}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &381002791
 GameObject:
   m_ObjectHideFlags: 0
@@ -1998,6 +2418,7 @@ GameObject:
   - component: {fileID: 381002792}
   - component: {fileID: 381002794}
   - component: {fileID: 381002793}
+  - component: {fileID: 381002795}
   m_Layer: 0
   m_Name: Icosphere.003 (1)
   m_TagString: Untagged
@@ -2070,6 +2491,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 381002791}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &381002795
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381002791}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &401843823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2081,6 +2522,7 @@ GameObject:
   - component: {fileID: 401843824}
   - component: {fileID: 401843826}
   - component: {fileID: 401843825}
+  - component: {fileID: 401843827}
   m_Layer: 0
   m_Name: Icosphere.004 (2)
   m_TagString: Untagged
@@ -2096,7 +2538,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 401843823}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -245, y: -0, z: -200}
+  m_LocalPosition: {x: -255, y: 0, z: -196}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2153,6 +2595,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 401843823}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &401843827
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401843823}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2279,6 +2741,7 @@ GameObject:
   - component: {fileID: 412474822}
   - component: {fileID: 412474824}
   - component: {fileID: 412474823}
+  - component: {fileID: 412474825}
   m_Layer: 0
   m_Name: Icosphere.001 (7)
   m_TagString: Untagged
@@ -2351,6 +2814,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412474821}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &412474825
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412474821}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &420920093
 GameObject:
   m_ObjectHideFlags: 0
@@ -2362,6 +2845,7 @@ GameObject:
   - component: {fileID: 420920094}
   - component: {fileID: 420920096}
   - component: {fileID: 420920095}
+  - component: {fileID: 420920097}
   m_Layer: 0
   m_Name: Icosphere (3)
   m_TagString: Untagged
@@ -2377,7 +2861,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 420920093}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -227, y: 0, z: -162}
+  m_LocalPosition: {x: -238, y: 0, z: -159}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2434,6 +2918,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 420920093}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &420920097
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420920093}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &438152355
 GameObject:
   m_ObjectHideFlags: 0
@@ -2445,6 +2949,7 @@ GameObject:
   - component: {fileID: 438152356}
   - component: {fileID: 438152358}
   - component: {fileID: 438152357}
+  - component: {fileID: 438152359}
   m_Layer: 0
   m_Name: Icosphere.001 (3)
   m_TagString: Untagged
@@ -2517,6 +3022,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438152355}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &438152359
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438152355}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &443530266
 GameObject:
   m_ObjectHideFlags: 0
@@ -2528,6 +3053,7 @@ GameObject:
   - component: {fileID: 443530267}
   - component: {fileID: 443530269}
   - component: {fileID: 443530268}
+  - component: {fileID: 443530270}
   m_Layer: 0
   m_Name: Icosphere.003 (1)
   m_TagString: Untagged
@@ -2600,6 +3126,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 443530266}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &443530270
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443530266}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &449125826
 GameObject:
   m_ObjectHideFlags: 0
@@ -2611,6 +3157,7 @@ GameObject:
   - component: {fileID: 449125827}
   - component: {fileID: 449125829}
   - component: {fileID: 449125828}
+  - component: {fileID: 449125830}
   m_Layer: 0
   m_Name: Icosphere.004 (6)
   m_TagString: Untagged
@@ -2683,6 +3230,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 449125826}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &449125830
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449125826}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &453159826
 GameObject:
   m_ObjectHideFlags: 0
@@ -2694,6 +3261,7 @@ GameObject:
   - component: {fileID: 453159827}
   - component: {fileID: 453159829}
   - component: {fileID: 453159828}
+  - component: {fileID: 453159830}
   m_Layer: 0
   m_Name: Icosphere.003 (4)
   m_TagString: Untagged
@@ -2709,7 +3277,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 453159826}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -155, y: 0, z: 11}
+  m_LocalPosition: {x: -183.5, y: 0, z: 31.2}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2766,6 +3334,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 453159826}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &453159830
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453159826}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &461373189
 GameObject:
   m_ObjectHideFlags: 0
@@ -2809,6 +3397,7 @@ GameObject:
   - component: {fileID: 463601464}
   - component: {fileID: 463601466}
   - component: {fileID: 463601465}
+  - component: {fileID: 463601467}
   m_Layer: 0
   m_Name: Icosphere.001 (1)
   m_TagString: Untagged
@@ -2824,7 +3413,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463601463}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 122, y: -0, z: -41}
+  m_LocalPosition: {x: 122, y: 0, z: -34}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2881,6 +3470,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463601463}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &463601467
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463601463}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &484132660
 GameObject:
   m_ObjectHideFlags: 0
@@ -2892,6 +3501,7 @@ GameObject:
   - component: {fileID: 484132661}
   - component: {fileID: 484132663}
   - component: {fileID: 484132662}
+  - component: {fileID: 484132664}
   m_Layer: 0
   m_Name: Icosphere.003 (8)
   m_TagString: Untagged
@@ -2964,6 +3574,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 484132660}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &484132664
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484132660}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &500271222
 GameObject:
   m_ObjectHideFlags: 0
@@ -2975,6 +3605,7 @@ GameObject:
   - component: {fileID: 500271223}
   - component: {fileID: 500271225}
   - component: {fileID: 500271224}
+  - component: {fileID: 500271226}
   m_Layer: 0
   m_Name: Icosphere.001 (5)
   m_TagString: Untagged
@@ -3047,6 +3678,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500271222}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &500271226
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500271222}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &506391653
 GameObject:
   m_ObjectHideFlags: 0
@@ -3058,6 +3709,7 @@ GameObject:
   - component: {fileID: 506391654}
   - component: {fileID: 506391656}
   - component: {fileID: 506391655}
+  - component: {fileID: 506391657}
   m_Layer: 0
   m_Name: Icosphere.001 (4)
   m_TagString: Untagged
@@ -3073,7 +3725,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 506391653}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 262, y: -0, z: -265}
+  m_LocalPosition: {x: 275, y: -0, z: -267}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3130,6 +3782,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 506391653}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &506391657
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506391653}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &508585104
 GameObject:
   m_ObjectHideFlags: 0
@@ -3141,6 +3813,7 @@ GameObject:
   - component: {fileID: 508585105}
   - component: {fileID: 508585107}
   - component: {fileID: 508585106}
+  - component: {fileID: 508585108}
   m_Layer: 0
   m_Name: Icosphere.001
   m_TagString: Untagged
@@ -3156,7 +3829,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 508585104}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 40, y: 0, z: 64}
+  m_LocalPosition: {x: 42, y: 0, z: 70}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3213,6 +3886,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 508585104}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &508585108
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508585104}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &516737898
 GameObject:
   m_ObjectHideFlags: 0
@@ -3224,6 +3917,7 @@ GameObject:
   - component: {fileID: 516737899}
   - component: {fileID: 516737901}
   - component: {fileID: 516737900}
+  - component: {fileID: 516737902}
   m_Layer: 0
   m_Name: Icosphere.003 (6)
   m_TagString: Untagged
@@ -3296,6 +3990,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516737898}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &516737902
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516737898}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &539785650
 GameObject:
   m_ObjectHideFlags: 0
@@ -3307,6 +4021,7 @@ GameObject:
   - component: {fileID: 539785651}
   - component: {fileID: 539785653}
   - component: {fileID: 539785652}
+  - component: {fileID: 539785654}
   m_Layer: 0
   m_Name: Icosphere (2)
   m_TagString: Untagged
@@ -3322,7 +4037,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 539785650}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -263, y: -0, z: -511}
+  m_LocalPosition: {x: -271, y: -0, z: -526}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3379,6 +4094,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 539785650}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &539785654
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539785650}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &543796422
 GameObject:
   m_ObjectHideFlags: 0
@@ -3390,6 +4125,7 @@ GameObject:
   - component: {fileID: 543796423}
   - component: {fileID: 543796425}
   - component: {fileID: 543796424}
+  - component: {fileID: 543796426}
   m_Layer: 0
   m_Name: Icosphere (7)
   m_TagString: Untagged
@@ -3462,6 +4198,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543796422}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &543796426
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543796422}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &571152665
 GameObject:
   m_ObjectHideFlags: 0
@@ -3473,6 +4229,7 @@ GameObject:
   - component: {fileID: 571152666}
   - component: {fileID: 571152668}
   - component: {fileID: 571152667}
+  - component: {fileID: 571152669}
   m_Layer: 0
   m_Name: Icosphere.003 (3)
   m_TagString: Untagged
@@ -3488,7 +4245,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571152665}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -203, y: -0, z: -126}
+  m_LocalPosition: {x: -219, y: 0, z: -122}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3545,6 +4302,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571152665}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &571152669
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571152665}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &613168334
 GameObject:
   m_ObjectHideFlags: 0
@@ -3556,6 +4333,7 @@ GameObject:
   - component: {fileID: 613168335}
   - component: {fileID: 613168337}
   - component: {fileID: 613168336}
+  - component: {fileID: 613168338}
   m_Layer: 0
   m_Name: Icosphere.003 (4)
   m_TagString: Untagged
@@ -3571,7 +4349,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613168334}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -131, y: -0, z: -53}
+  m_LocalPosition: {x: -118, y: 0, z: -36}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3628,6 +4406,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613168334}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &613168338
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613168334}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &616074481
 GameObject:
   m_ObjectHideFlags: 0
@@ -3639,6 +4437,7 @@ GameObject:
   - component: {fileID: 616074482}
   - component: {fileID: 616074484}
   - component: {fileID: 616074483}
+  - component: {fileID: 616074485}
   m_Layer: 0
   m_Name: Icosphere.004 (7)
   m_TagString: Untagged
@@ -3654,7 +4453,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616074481}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 135, y: -0, z: -582}
+  m_LocalPosition: {x: 141.6, y: -0, z: -585.6}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3711,6 +4510,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616074481}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &616074485
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616074481}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &625828108
 GameObject:
   m_ObjectHideFlags: 0
@@ -3722,6 +4541,7 @@ GameObject:
   - component: {fileID: 625828109}
   - component: {fileID: 625828111}
   - component: {fileID: 625828110}
+  - component: {fileID: 625828112}
   m_Layer: 0
   m_Name: Icosphere.001 (5)
   m_TagString: Untagged
@@ -3794,6 +4614,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625828108}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &625828112
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625828108}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &636717885
 GameObject:
   m_ObjectHideFlags: 0
@@ -3805,6 +4645,7 @@ GameObject:
   - component: {fileID: 636717886}
   - component: {fileID: 636717888}
   - component: {fileID: 636717887}
+  - component: {fileID: 636717889}
   m_Layer: 0
   m_Name: Icosphere.001 (3)
   m_TagString: Untagged
@@ -3820,7 +4661,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 636717885}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -354, y: -0, z: -328}
+  m_LocalPosition: {x: -370, y: -0, z: -328}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3877,6 +4718,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 636717885}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &636717889
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636717885}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &645527077
 GameObject:
   m_ObjectHideFlags: 0
@@ -3888,6 +4749,7 @@ GameObject:
   - component: {fileID: 645527078}
   - component: {fileID: 645527080}
   - component: {fileID: 645527079}
+  - component: {fileID: 645527081}
   m_Layer: 0
   m_Name: Icosphere (1)
   m_TagString: Untagged
@@ -3903,7 +4765,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 645527077}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 242, y: -0, z: -188}
+  m_LocalPosition: {x: 250, y: 0, z: -187}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3960,6 +4822,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 645527077}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &645527081
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645527077}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &667963784
 GameObject:
   m_ObjectHideFlags: 0
@@ -3971,6 +4853,7 @@ GameObject:
   - component: {fileID: 667963785}
   - component: {fileID: 667963787}
   - component: {fileID: 667963786}
+  - component: {fileID: 667963788}
   m_Layer: 0
   m_Name: Icosphere.003 (3)
   m_TagString: Untagged
@@ -3986,7 +4869,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667963784}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -274, y: 0, z: -92}
+  m_LocalPosition: {x: -290, y: -0, z: -84}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4043,6 +4926,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667963784}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &667963788
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667963784}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &668012315
 GameObject:
   m_ObjectHideFlags: 0
@@ -4185,6 +5088,7 @@ GameObject:
   - component: {fileID: 696266972}
   - component: {fileID: 696266974}
   - component: {fileID: 696266973}
+  - component: {fileID: 696266975}
   m_Layer: 0
   m_Name: Icosphere (3)
   m_TagString: Untagged
@@ -4200,7 +5104,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696266971}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -296, y: 0, z: -137}
+  m_LocalPosition: {x: -323, y: 0, z: -122}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4257,6 +5161,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696266971}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &696266975
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696266971}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &702600145
 GameObject:
   m_ObjectHideFlags: 0
@@ -4268,6 +5192,7 @@ GameObject:
   - component: {fileID: 702600146}
   - component: {fileID: 702600148}
   - component: {fileID: 702600147}
+  - component: {fileID: 702600149}
   m_Layer: 0
   m_Name: Icosphere.004 (1)
   m_TagString: Untagged
@@ -4340,6 +5265,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 702600145}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &702600149
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702600145}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &743494170
 GameObject:
   m_ObjectHideFlags: 0
@@ -4351,6 +5296,7 @@ GameObject:
   - component: {fileID: 743494171}
   - component: {fileID: 743494173}
   - component: {fileID: 743494172}
+  - component: {fileID: 743494174}
   m_Layer: 0
   m_Name: Icosphere.003 (10)
   m_TagString: Untagged
@@ -4366,7 +5312,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743494170}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 21, y: -0, z: -557}
+  m_LocalPosition: {x: 20, y: -0, z: -569}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4423,6 +5369,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743494170}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &743494174
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743494170}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &765037418
 GameObject:
   m_ObjectHideFlags: 0
@@ -4466,6 +5432,7 @@ GameObject:
   - component: {fileID: 778274561}
   - component: {fileID: 778274563}
   - component: {fileID: 778274562}
+  - component: {fileID: 778274564}
   m_Layer: 0
   m_Name: Icosphere.001
   m_TagString: Untagged
@@ -4481,7 +5448,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778274560}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -39, y: -0, z: 16}
+  m_LocalPosition: {x: -42.4, y: 0, z: 44.6}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4538,6 +5505,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778274560}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &778274564
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778274560}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &784491555
 GameObject:
   m_ObjectHideFlags: 0
@@ -4549,6 +5536,7 @@ GameObject:
   - component: {fileID: 784491556}
   - component: {fileID: 784491558}
   - component: {fileID: 784491557}
+  - component: {fileID: 784491559}
   m_Layer: 0
   m_Name: Icosphere.003 (9)
   m_TagString: Untagged
@@ -4564,7 +5552,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784491555}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -112, y: 0, z: -516}
+  m_LocalPosition: {x: -106, y: -0, z: -525}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4621,6 +5609,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784491555}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &784491559
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784491555}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &821609192
 GameObject:
   m_ObjectHideFlags: 0
@@ -4685,6 +5693,7 @@ GameObject:
   - component: {fileID: 834354511}
   - component: {fileID: 834354513}
   - component: {fileID: 834354512}
+  - component: {fileID: 834354514}
   m_Layer: 0
   m_Name: Icosphere.004
   m_TagString: Untagged
@@ -4700,7 +5709,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834354510}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -64, y: 0, z: 48}
+  m_LocalPosition: {x: -71.4, y: 0, z: 64.6}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4757,6 +5766,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834354510}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &834354514
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834354510}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &839649434
 GameObject:
   m_ObjectHideFlags: 0
@@ -4768,6 +5797,7 @@ GameObject:
   - component: {fileID: 839649435}
   - component: {fileID: 839649437}
   - component: {fileID: 839649436}
+  - component: {fileID: 839649438}
   m_Layer: 0
   m_Name: Icosphere
   m_TagString: Untagged
@@ -4783,7 +5813,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 839649434}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 105, y: 0, z: 13}
+  m_LocalPosition: {x: 104.2, y: 0, z: 24.1}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4840,6 +5870,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 839649434}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &839649438
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839649434}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &846875245
 GameObject:
   m_ObjectHideFlags: 0
@@ -4950,6 +6000,7 @@ GameObject:
   - component: {fileID: 999736880}
   - component: {fileID: 999736882}
   - component: {fileID: 999736881}
+  - component: {fileID: 999736883}
   m_Layer: 0
   m_Name: Icosphere.001 (6)
   m_TagString: Untagged
@@ -5022,6 +6073,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999736879}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &999736883
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999736879}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1036149475
 GameObject:
   m_ObjectHideFlags: 0
@@ -5033,6 +6104,7 @@ GameObject:
   - component: {fileID: 1036149476}
   - component: {fileID: 1036149478}
   - component: {fileID: 1036149477}
+  - component: {fileID: 1036149479}
   m_Layer: 0
   m_Name: Icosphere.003 (8)
   m_TagString: Untagged
@@ -5048,7 +6120,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036149475}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -214, y: -0, z: -547}
+  m_LocalPosition: {x: -227, y: -0, z: -561}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5105,6 +6177,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036149475}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1036149479
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036149475}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1050356607
 GameObject:
   m_ObjectHideFlags: 0
@@ -5116,6 +6208,7 @@ GameObject:
   - component: {fileID: 1050356608}
   - component: {fileID: 1050356610}
   - component: {fileID: 1050356609}
+  - component: {fileID: 1050356611}
   m_Layer: 0
   m_Name: Icosphere.001 (6)
   m_TagString: Untagged
@@ -5188,6 +6281,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050356607}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1050356611
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050356607}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1094225780
 GameObject:
   m_ObjectHideFlags: 0
@@ -5199,6 +6312,7 @@ GameObject:
   - component: {fileID: 1094225781}
   - component: {fileID: 1094225783}
   - component: {fileID: 1094225782}
+  - component: {fileID: 1094225784}
   m_Layer: 0
   m_Name: Icosphere.004 (5)
   m_TagString: Untagged
@@ -5214,7 +6328,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094225780}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -244, y: -0, z: -443}
+  m_LocalPosition: {x: -254, y: -0, z: -443}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5271,6 +6385,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094225780}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1094225784
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094225780}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1116037977
 GameObject:
   m_ObjectHideFlags: 0
@@ -5282,6 +6416,7 @@ GameObject:
   - component: {fileID: 1116037978}
   - component: {fileID: 1116037980}
   - component: {fileID: 1116037979}
+  - component: {fileID: 1116037981}
   m_Layer: 0
   m_Name: Icosphere.003 (10)
   m_TagString: Untagged
@@ -5297,7 +6432,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116037977}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 23, y: -0, z: -603}
+  m_LocalPosition: {x: 24.7, y: -0, z: -615.5}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5354,6 +6489,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116037977}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1116037981
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116037977}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1212861501
 GameObject:
   m_ObjectHideFlags: 0
@@ -5365,6 +6520,7 @@ GameObject:
   - component: {fileID: 1212861502}
   - component: {fileID: 1212861504}
   - component: {fileID: 1212861503}
+  - component: {fileID: 1212861505}
   m_Layer: 0
   m_Name: Icosphere.004 (2)
   m_TagString: Untagged
@@ -5380,7 +6536,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212861501}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -291, y: -0, z: -191}
+  m_LocalPosition: {x: -315, y: -0, z: -197}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5437,6 +6593,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212861501}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1212861505
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212861501}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1222107846
 GameObject:
   m_ObjectHideFlags: 0
@@ -5655,6 +6831,7 @@ GameObject:
   - component: {fileID: 1240671476}
   - component: {fileID: 1240671478}
   - component: {fileID: 1240671477}
+  - component: {fileID: 1240671479}
   m_Layer: 0
   m_Name: Icosphere.003 (4)
   m_TagString: Untagged
@@ -5670,7 +6847,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240671475}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -131, y: 0, z: -11}
+  m_LocalPosition: {x: -134, y: 0, z: 8}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5727,6 +6904,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240671475}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1240671479
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240671475}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1255333751
 GameObject:
   m_ObjectHideFlags: 0
@@ -5738,6 +6935,7 @@ GameObject:
   - component: {fileID: 1255333752}
   - component: {fileID: 1255333754}
   - component: {fileID: 1255333753}
+  - component: {fileID: 1255333755}
   m_Layer: 0
   m_Name: Icosphere.003 (7)
   m_TagString: Untagged
@@ -5810,6 +7008,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1255333751}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1255333755
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255333751}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1294320540
 GameObject:
   m_ObjectHideFlags: 0
@@ -5821,6 +7039,7 @@ GameObject:
   - component: {fileID: 1294320541}
   - component: {fileID: 1294320543}
   - component: {fileID: 1294320542}
+  - component: {fileID: 1294320544}
   m_Layer: 0
   m_Name: Icosphere (5)
   m_TagString: Untagged
@@ -5893,6 +7112,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294320540}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1294320544
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294320540}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1296735528
 GameObject:
   m_ObjectHideFlags: 0
@@ -5904,6 +7143,7 @@ GameObject:
   - component: {fileID: 1296735529}
   - component: {fileID: 1296735531}
   - component: {fileID: 1296735530}
+  - component: {fileID: 1296735532}
   m_Layer: 0
   m_Name: Icosphere.003
   m_TagString: Untagged
@@ -5976,6 +7216,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296735528}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1296735532
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296735528}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1301734914
 GameObject:
   m_ObjectHideFlags: 0
@@ -5987,6 +7247,7 @@ GameObject:
   - component: {fileID: 1301734915}
   - component: {fileID: 1301734917}
   - component: {fileID: 1301734916}
+  - component: {fileID: 1301734918}
   m_Layer: 0
   m_Name: Icosphere (7)
   m_TagString: Untagged
@@ -6059,6 +7320,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1301734914}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1301734918
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301734914}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1331493489
 GameObject:
   m_ObjectHideFlags: 0
@@ -6070,6 +7351,7 @@ GameObject:
   - component: {fileID: 1331493490}
   - component: {fileID: 1331493492}
   - component: {fileID: 1331493491}
+  - component: {fileID: 1331493493}
   m_Layer: 0
   m_Name: Icosphere (4)
   m_TagString: Untagged
@@ -6085,7 +7367,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331493489}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -174, y: -0, z: -89}
+  m_LocalPosition: {x: -185, y: 0, z: -84}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6142,6 +7424,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331493489}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1331493493
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331493489}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1338072449
 GameObject:
   m_ObjectHideFlags: 0
@@ -6153,6 +7455,7 @@ GameObject:
   - component: {fileID: 1338072450}
   - component: {fileID: 1338072452}
   - component: {fileID: 1338072451}
+  - component: {fileID: 1338072453}
   m_Layer: 0
   m_Name: Icosphere.004 (6)
   m_TagString: Untagged
@@ -6168,7 +7471,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338072449}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 81, y: -0, z: -595}
+  m_LocalPosition: {x: 81.2, y: -0, z: -606.6}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6225,6 +7528,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338072449}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1338072453
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338072449}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1339452266
 GameObject:
   m_ObjectHideFlags: 0
@@ -6236,6 +7559,7 @@ GameObject:
   - component: {fileID: 1339452267}
   - component: {fileID: 1339452269}
   - component: {fileID: 1339452268}
+  - component: {fileID: 1339452270}
   m_Layer: 0
   m_Name: Icosphere (1)
   m_TagString: Untagged
@@ -6251,7 +7575,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339452266}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 296, y: 0, z: -129}
+  m_LocalPosition: {x: 306.8, y: 0, z: -126.9}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6308,6 +7632,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339452266}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1339452270
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339452266}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1350532217
 GameObject:
   m_ObjectHideFlags: 0
@@ -6319,6 +7663,7 @@ GameObject:
   - component: {fileID: 1350532218}
   - component: {fileID: 1350532220}
   - component: {fileID: 1350532219}
+  - component: {fileID: 1350532221}
   m_Layer: 0
   m_Name: Icosphere.001 (8)
   m_TagString: Untagged
@@ -6391,6 +7736,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350532217}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1350532221
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350532217}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1405650555
 GameObject:
   m_ObjectHideFlags: 0
@@ -6402,6 +7767,7 @@ GameObject:
   - component: {fileID: 1405650556}
   - component: {fileID: 1405650558}
   - component: {fileID: 1405650557}
+  - component: {fileID: 1405650559}
   m_Layer: 0
   m_Name: Icosphere.001 (2)
   m_TagString: Untagged
@@ -6417,7 +7783,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1405650555}
   m_LocalRotation: {x: -0.39837503, y: 0.58420664, z: 0.5842066, w: 0.39837494}
-  m_LocalPosition: {x: 225, y: 6, z: -150}
+  m_LocalPosition: {x: 234, y: 6, z: -155}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6474,6 +7840,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1405650555}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1405650559
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405650555}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1421103529
 GameObject:
   m_ObjectHideFlags: 0
@@ -6485,6 +7871,7 @@ GameObject:
   - component: {fileID: 1421103530}
   - component: {fileID: 1421103532}
   - component: {fileID: 1421103531}
+  - component: {fileID: 1421103533}
   m_Layer: 0
   m_Name: Icosphere (6)
   m_TagString: Untagged
@@ -6500,7 +7887,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421103529}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -224, y: -272, z: -693}
+  m_LocalPosition: {x: -172, y: -0, z: -591}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6557,6 +7944,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421103529}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1421103533
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421103529}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1452050276
 GameObject:
   m_ObjectHideFlags: 0
@@ -6568,6 +7975,7 @@ GameObject:
   - component: {fileID: 1452050277}
   - component: {fileID: 1452050279}
   - component: {fileID: 1452050278}
+  - component: {fileID: 1452050280}
   m_Layer: 0
   m_Name: Icosphere.001 (7)
   m_TagString: Untagged
@@ -6583,7 +7991,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452050276}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -57, y: -0, z: -567}
+  m_LocalPosition: {x: -61, y: -0, z: -582}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6640,6 +8048,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452050276}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1452050280
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452050276}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1473319934
 GameObject:
   m_ObjectHideFlags: 0
@@ -6651,6 +8079,7 @@ GameObject:
   - component: {fileID: 1473319935}
   - component: {fileID: 1473319937}
   - component: {fileID: 1473319936}
+  - component: {fileID: 1473319938}
   m_Layer: 0
   m_Name: Icosphere.001 (1)
   m_TagString: Untagged
@@ -6723,6 +8152,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1473319934}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1473319938
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473319934}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1491654052
 GameObject:
   m_ObjectHideFlags: 0
@@ -6734,6 +8183,7 @@ GameObject:
   - component: {fileID: 1491654053}
   - component: {fileID: 1491654055}
   - component: {fileID: 1491654054}
+  - component: {fileID: 1491654056}
   m_Layer: 0
   m_Name: Icosphere.003 (7)
   m_TagString: Untagged
@@ -6806,6 +8256,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1491654052}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1491654056
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491654052}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1492161955
 GameObject:
   m_ObjectHideFlags: 0
@@ -6817,6 +8287,7 @@ GameObject:
   - component: {fileID: 1492161956}
   - component: {fileID: 1492161958}
   - component: {fileID: 1492161957}
+  - component: {fileID: 1492161959}
   m_Layer: 0
   m_Name: Icosphere.003 (5)
   m_TagString: Untagged
@@ -6889,6 +8360,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1492161955}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1492161959
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492161955}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1493336755
 GameObject:
   m_ObjectHideFlags: 0
@@ -6900,6 +8391,7 @@ GameObject:
   - component: {fileID: 1493336756}
   - component: {fileID: 1493336758}
   - component: {fileID: 1493336757}
+  - component: {fileID: 1493336759}
   m_Layer: 0
   m_Name: Icosphere (2)
   m_TagString: Untagged
@@ -6915,7 +8407,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1493336755}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 202, y: -0, z: -112}
+  m_LocalPosition: {x: 207, y: -0, z: -120}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6972,6 +8464,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1493336755}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1493336759
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493336755}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1506022902
 GameObject:
   m_ObjectHideFlags: 0
@@ -6983,6 +8495,7 @@ GameObject:
   - component: {fileID: 1506022903}
   - component: {fileID: 1506022905}
   - component: {fileID: 1506022904}
+  - component: {fileID: 1506022906}
   m_Layer: 0
   m_Name: Icosphere.003 (3)
   m_TagString: Untagged
@@ -6998,7 +8511,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506022902}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -250, y: -0, z: -104}
+  m_LocalPosition: {x: -270, y: -0, z: -102}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7055,6 +8568,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506022902}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1506022906
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506022902}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1507281122
 GameObject:
   m_ObjectHideFlags: 0
@@ -7066,6 +8599,7 @@ GameObject:
   - component: {fileID: 1507281123}
   - component: {fileID: 1507281125}
   - component: {fileID: 1507281124}
+  - component: {fileID: 1507281126}
   m_Layer: 0
   m_Name: Icosphere.003 (8)
   m_TagString: Untagged
@@ -7081,7 +8615,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1507281122}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -188, y: -0, z: -507}
+  m_LocalPosition: {x: -171.9, y: -0, z: -521.5}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7138,6 +8672,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1507281122}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1507281126
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507281122}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1535346558
 GameObject:
   m_ObjectHideFlags: 0
@@ -7149,6 +8703,7 @@ GameObject:
   - component: {fileID: 1535346559}
   - component: {fileID: 1535346561}
   - component: {fileID: 1535346560}
+  - component: {fileID: 1535346562}
   m_Layer: 0
   m_Name: Icosphere.004 (1)
   m_TagString: Untagged
@@ -7164,7 +8719,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535346558}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 145, y: -0, z: -64}
+  m_LocalPosition: {x: 153, y: 0, z: -57}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7221,6 +8776,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535346558}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1535346562
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535346558}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1570924884
 GameObject:
   m_ObjectHideFlags: 0
@@ -7232,6 +8807,7 @@ GameObject:
   - component: {fileID: 1570924885}
   - component: {fileID: 1570924887}
   - component: {fileID: 1570924886}
+  - component: {fileID: 1570924888}
   m_Layer: 0
   m_Name: Icosphere (5)
   m_TagString: Untagged
@@ -7304,6 +8880,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570924884}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1570924888
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570924884}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1587657628
 GameObject:
   m_ObjectHideFlags: 0
@@ -7315,6 +8911,7 @@ GameObject:
   - component: {fileID: 1587657629}
   - component: {fileID: 1587657631}
   - component: {fileID: 1587657630}
+  - component: {fileID: 1587657632}
   m_Layer: 0
   m_Name: Icosphere.003
   m_TagString: Untagged
@@ -7330,7 +8927,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1587657628}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 70, y: 0, z: 24}
+  m_LocalPosition: {x: 64.6, y: 0, z: 35.6}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7387,6 +8984,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1587657628}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1587657632
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587657628}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1633239232
 GameObject:
   m_ObjectHideFlags: 0
@@ -7398,6 +9015,7 @@ GameObject:
   - component: {fileID: 1633239233}
   - component: {fileID: 1633239235}
   - component: {fileID: 1633239234}
+  - component: {fileID: 1633239236}
   m_Layer: 0
   m_Name: Icosphere.003 (9)
   m_TagString: Untagged
@@ -7470,6 +9088,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633239232}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1633239236
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633239232}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1639607014
 GameObject:
   m_ObjectHideFlags: 0
@@ -7481,6 +9119,7 @@ GameObject:
   - component: {fileID: 1639607015}
   - component: {fileID: 1639607017}
   - component: {fileID: 1639607016}
+  - component: {fileID: 1639607018}
   m_Layer: 0
   m_Name: Icosphere (1)
   m_TagString: Untagged
@@ -7496,7 +9135,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639607014}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 280, y: 0, z: -159}
+  m_LocalPosition: {x: 287.6, y: 0, z: -155.8}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7553,6 +9192,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639607014}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1639607018
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639607014}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1654366475
 GameObject:
   m_ObjectHideFlags: 0
@@ -7564,6 +9223,7 @@ GameObject:
   - component: {fileID: 1654366476}
   - component: {fileID: 1654366478}
   - component: {fileID: 1654366477}
+  - component: {fileID: 1654366479}
   m_Layer: 0
   m_Name: Icosphere.002
   m_TagString: Untagged
@@ -7579,7 +9239,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1654366475}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -18, y: 0, z: 61}
+  m_LocalPosition: {x: -17, y: 0, z: 73}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7636,6 +9296,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1654366475}
   m_Mesh: {fileID: 4444728127320036556, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1654366479
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654366475}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1656335636
 GameObject:
   m_ObjectHideFlags: 0
@@ -7647,6 +9327,7 @@ GameObject:
   - component: {fileID: 1656335637}
   - component: {fileID: 1656335639}
   - component: {fileID: 1656335638}
+  - component: {fileID: 1656335640}
   m_Layer: 0
   m_Name: Icosphere.004 (7)
   m_TagString: Untagged
@@ -7662,7 +9343,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1656335636}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 122, y: 0, z: -513}
+  m_LocalPosition: {x: 111, y: -0, z: -524}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7719,6 +9400,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1656335636}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1656335640
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656335636}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1659794108
 GameObject:
   m_ObjectHideFlags: 0
@@ -7730,6 +9431,7 @@ GameObject:
   - component: {fileID: 1659794109}
   - component: {fileID: 1659794111}
   - component: {fileID: 1659794110}
+  - component: {fileID: 1659794112}
   m_Layer: 0
   m_Name: Icosphere.001 (5)
   m_TagString: Untagged
@@ -7802,6 +9504,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1659794108}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1659794112
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659794108}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1660536079
 GameObject:
   m_ObjectHideFlags: 0
@@ -7813,6 +9535,7 @@ GameObject:
   - component: {fileID: 1660536080}
   - component: {fileID: 1660536082}
   - component: {fileID: 1660536081}
+  - component: {fileID: 1660536083}
   m_Layer: 0
   m_Name: Icosphere.004 (5)
   m_TagString: Untagged
@@ -7828,7 +9551,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1660536079}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -306, y: 0, z: -461}
+  m_LocalPosition: {x: -316, y: -0, z: -488}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7885,6 +9608,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1660536079}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1660536083
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660536079}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1670344321
 GameObject:
   m_ObjectHideFlags: 0
@@ -7896,6 +9639,7 @@ GameObject:
   - component: {fileID: 1670344322}
   - component: {fileID: 1670344324}
   - component: {fileID: 1670344323}
+  - component: {fileID: 1670344325}
   m_Layer: 0
   m_Name: Icosphere.003 (2)
   m_TagString: Untagged
@@ -7911,7 +9655,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670344321}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -298, y: -0, z: -234}
+  m_LocalPosition: {x: -319, y: -0, z: -249}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7968,6 +9712,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670344321}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1670344325
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670344321}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1680435636
 GameObject:
   m_ObjectHideFlags: 0
@@ -7979,6 +9743,7 @@ GameObject:
   - component: {fileID: 1680435637}
   - component: {fileID: 1680435639}
   - component: {fileID: 1680435638}
+  - component: {fileID: 1680435640}
   m_Layer: 0
   m_Name: Icosphere.003 (6)
   m_TagString: Untagged
@@ -7994,7 +9759,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680435636}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -321, y: 0, z: -414}
+  m_LocalPosition: {x: -341, y: -0, z: -436}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8051,6 +9816,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680435636}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1680435640
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680435636}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1698059869
 GameObject:
   m_ObjectHideFlags: 0
@@ -8062,6 +9847,7 @@ GameObject:
   - component: {fileID: 1698059870}
   - component: {fileID: 1698059872}
   - component: {fileID: 1698059871}
+  - component: {fileID: 1698059873}
   m_Layer: 0
   m_Name: Icosphere.004 (5)
   m_TagString: Untagged
@@ -8077,7 +9863,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698059869}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -221, y: 0, z: -419}
+  m_LocalPosition: {x: -218.8, y: 0, z: -411.2}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8134,6 +9920,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698059869}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1698059873
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698059869}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1729933927
 GameObject:
   m_ObjectHideFlags: 0
@@ -8145,6 +9951,7 @@ GameObject:
   - component: {fileID: 1729933928}
   - component: {fileID: 1729933930}
   - component: {fileID: 1729933929}
+  - component: {fileID: 1729933931}
   m_Layer: 0
   m_Name: Icosphere.001 (4)
   m_TagString: Untagged
@@ -8217,6 +10024,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729933927}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1729933931
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729933927}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1761144963
 GameObject:
   m_ObjectHideFlags: 0
@@ -8228,6 +10055,7 @@ GameObject:
   - component: {fileID: 1761144964}
   - component: {fileID: 1761144966}
   - component: {fileID: 1761144965}
+  - component: {fileID: 1761144967}
   m_Layer: 0
   m_Name: Icosphere.004 (1)
   m_TagString: Untagged
@@ -8243,7 +10071,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761144963}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 176, y: -0, z: -25}
+  m_LocalPosition: {x: 182, y: 0, z: -4}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8300,6 +10128,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761144963}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1761144967
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761144963}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1776048081
 GameObject:
   m_ObjectHideFlags: 0
@@ -8357,6 +10205,7 @@ GameObject:
   - component: {fileID: 1791151799}
   - component: {fileID: 1791151801}
   - component: {fileID: 1791151800}
+  - component: {fileID: 1791151802}
   m_Layer: 0
   m_Name: Icosphere.001 (1)
   m_TagString: Untagged
@@ -8372,7 +10221,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1791151798}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -341, y: 0, z: -223}
+  m_LocalPosition: {x: -364, y: 0, z: -214}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8429,6 +10278,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1791151798}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1791151802
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791151798}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1791793363
 GameObject:
   m_ObjectHideFlags: 0
@@ -8440,6 +10309,7 @@ GameObject:
   - component: {fileID: 1791793364}
   - component: {fileID: 1791793366}
   - component: {fileID: 1791793365}
+  - component: {fileID: 1791793367}
   m_Layer: 0
   m_Name: Icosphere.003 (7)
   m_TagString: Untagged
@@ -8512,6 +10382,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1791793363}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1791793367
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791793363}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1816518980
 GameObject:
   m_ObjectHideFlags: 0
@@ -8523,6 +10413,7 @@ GameObject:
   - component: {fileID: 1816518981}
   - component: {fileID: 1816518983}
   - component: {fileID: 1816518982}
+  - component: {fileID: 1816518984}
   m_Layer: 0
   m_Name: Icosphere.004 (4)
   m_TagString: Untagged
@@ -8595,6 +10486,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1816518980}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1816518984
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816518980}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1818113756
 GameObject:
   m_ObjectHideFlags: 0
@@ -8606,6 +10517,7 @@ GameObject:
   - component: {fileID: 1818113757}
   - component: {fileID: 1818113759}
   - component: {fileID: 1818113758}
+  - component: {fileID: 1818113760}
   m_Layer: 0
   m_Name: Icosphere.003 (10)
   m_TagString: Untagged
@@ -8678,6 +10590,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1818113756}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1818113760
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818113756}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1828590015
 GameObject:
   m_ObjectHideFlags: 0
@@ -8689,6 +10621,7 @@ GameObject:
   - component: {fileID: 1828590016}
   - component: {fileID: 1828590018}
   - component: {fileID: 1828590017}
+  - component: {fileID: 1828590019}
   m_Layer: 0
   m_Name: Icosphere.004
   m_TagString: Untagged
@@ -8704,7 +10637,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1828590015}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -94, y: 0, z: 14}
+  m_LocalPosition: {x: -94, y: 0, z: 29}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8761,6 +10694,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1828590015}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1828590019
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828590015}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1833917924
 GameObject:
   m_ObjectHideFlags: 0
@@ -8772,6 +10725,7 @@ GameObject:
   - component: {fileID: 1833917925}
   - component: {fileID: 1833917927}
   - component: {fileID: 1833917926}
+  - component: {fileID: 1833917928}
   m_Layer: 0
   m_Name: Icosphere.001 (4)
   m_TagString: Untagged
@@ -8787,7 +10741,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1833917924}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 328, y: 0, z: -235}
+  m_LocalPosition: {x: 338.1, y: 0, z: -230.5}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8844,6 +10798,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1833917924}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1833917928
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833917924}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1861488689
 GameObject:
   m_ObjectHideFlags: 0
@@ -8855,6 +10829,7 @@ GameObject:
   - component: {fileID: 1861488690}
   - component: {fileID: 1861488692}
   - component: {fileID: 1861488691}
+  - component: {fileID: 1861488693}
   m_Layer: 0
   m_Name: Icosphere (5)
   m_TagString: Untagged
@@ -8927,6 +10902,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1861488689}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1861488693
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861488689}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1867713377
 GameObject:
   m_ObjectHideFlags: 0
@@ -9006,6 +11001,7 @@ GameObject:
   - component: {fileID: 1869570272}
   - component: {fileID: 1869570274}
   - component: {fileID: 1869570273}
+  - component: {fileID: 1869570275}
   m_Layer: 0
   m_Name: Icosphere (4)
   m_TagString: Untagged
@@ -9021,7 +11017,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869570271}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -243, y: 0, z: -60}
+  m_LocalPosition: {x: -262, y: 0, z: -46}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9078,6 +11074,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869570271}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1869570275
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869570271}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1880686426
 GameObject:
   m_ObjectHideFlags: 0
@@ -9089,6 +11105,7 @@ GameObject:
   - component: {fileID: 1880686427}
   - component: {fileID: 1880686429}
   - component: {fileID: 1880686428}
+  - component: {fileID: 1880686430}
   m_Layer: 0
   m_Name: Icosphere.004 (7)
   m_TagString: Untagged
@@ -9161,6 +11178,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880686426}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1880686430
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880686426}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1911694371
 GameObject:
   m_ObjectHideFlags: 0
@@ -9172,6 +11209,7 @@ GameObject:
   - component: {fileID: 1911694372}
   - component: {fileID: 1911694374}
   - component: {fileID: 1911694373}
+  - component: {fileID: 1911694375}
   m_Layer: 0
   m_Name: Icosphere.002
   m_TagString: Untagged
@@ -9187,7 +11225,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911694371}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 16, y: 0, z: 33}
+  m_LocalPosition: {x: 14.9, y: 0, z: 42.6}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9244,6 +11282,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911694371}
   m_Mesh: {fileID: 4444728127320036556, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1911694375
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911694371}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1941803456
 GameObject:
   m_ObjectHideFlags: 0
@@ -9255,6 +11313,7 @@ GameObject:
   - component: {fileID: 1941803457}
   - component: {fileID: 1941803459}
   - component: {fileID: 1941803458}
+  - component: {fileID: 1941803460}
   m_Layer: 0
   m_Name: Icosphere (6)
   m_TagString: Untagged
@@ -9270,7 +11329,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941803456}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -212, y: 0, z: -478}
+  m_LocalPosition: {x: -218, y: -0, z: -484}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9327,6 +11386,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941803456}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1941803460
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941803456}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2beb0df412657ae4db80eac7f0a7c572, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1975455454
 GameObject:
   m_ObjectHideFlags: 0
@@ -9338,6 +11417,7 @@ GameObject:
   - component: {fileID: 1975455455}
   - component: {fileID: 1975455457}
   - component: {fileID: 1975455456}
+  - component: {fileID: 1975455458}
   m_Layer: 0
   m_Name: Icosphere.001 (8)
   m_TagString: Untagged
@@ -9410,6 +11490,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1975455454}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1975455458
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975455454}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1984281852
 GameObject:
   m_ObjectHideFlags: 0
@@ -9421,6 +11521,7 @@ GameObject:
   - component: {fileID: 1984281853}
   - component: {fileID: 1984281855}
   - component: {fileID: 1984281854}
+  - component: {fileID: 1984281856}
   m_Layer: 0
   m_Name: Icosphere.003 (1)
   m_TagString: Untagged
@@ -9436,7 +11537,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984281852}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 217, y: 0, z: -37}
+  m_LocalPosition: {x: 227.5, y: 0, z: -24.6}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9493,6 +11594,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984281852}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1984281856
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984281852}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1986624345
 GameObject:
   m_ObjectHideFlags: 0
@@ -9504,6 +11625,7 @@ GameObject:
   - component: {fileID: 1986624346}
   - component: {fileID: 1986624348}
   - component: {fileID: 1986624347}
+  - component: {fileID: 1986624349}
   m_Layer: 0
   m_Name: Icosphere
   m_TagString: Untagged
@@ -9519,7 +11641,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986624345}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -115, y: 0, z: 27}
+  m_LocalPosition: {x: -124, y: 0, z: 53.8}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9576,6 +11698,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986624345}
   m_Mesh: {fileID: 289301614986012343, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &1986624349
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986624345}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2013388163
 GameObject:
   m_ObjectHideFlags: 0
@@ -9587,6 +11729,7 @@ GameObject:
   - component: {fileID: 2013388164}
   - component: {fileID: 2013388166}
   - component: {fileID: 2013388165}
+  - component: {fileID: 2013388167}
   m_Layer: 0
   m_Name: Icosphere.001 (8)
   m_TagString: Untagged
@@ -9659,6 +11802,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013388163}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &2013388167
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013388163}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2019078733
 GameObject:
   m_ObjectHideFlags: 0
@@ -9670,6 +11833,7 @@ GameObject:
   - component: {fileID: 2019078734}
   - component: {fileID: 2019078736}
   - component: {fileID: 2019078735}
+  - component: {fileID: 2019078737}
   m_Layer: 0
   m_Name: Icosphere.004 (3)
   m_TagString: Untagged
@@ -9685,7 +11849,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2019078733}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -203, y: 0, z: -36}
+  m_LocalPosition: {x: -230.8, y: 0, z: 9.9}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9742,6 +11906,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2019078733}
   m_Mesh: {fileID: 8204137566577028532, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &2019078737
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019078733}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2024412450
 GameObject:
   m_ObjectHideFlags: 0
@@ -9753,6 +11937,7 @@ GameObject:
   - component: {fileID: 2024412451}
   - component: {fileID: 2024412453}
   - component: {fileID: 2024412452}
+  - component: {fileID: 2024412454}
   m_Layer: 0
   m_Name: Icosphere.003 (9)
   m_TagString: Untagged
@@ -9825,6 +12010,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024412450}
   m_Mesh: {fileID: -3214521003866156968, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &2024412454
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024412450}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63eeb34487713624cb28a5c014e43f00, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2053685968
 GameObject:
   m_ObjectHideFlags: 0
@@ -9952,6 +12157,7 @@ GameObject:
   - component: {fileID: 2133460177}
   - component: {fileID: 2133460179}
   - component: {fileID: 2133460178}
+  - component: {fileID: 2133460180}
   m_Layer: 0
   m_Name: Icosphere.001 (3)
   m_TagString: Untagged
@@ -9967,7 +12173,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133460176}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -254, y: -0, z: -276}
+  m_LocalPosition: {x: -263, y: -0, z: -276}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10024,6 +12230,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133460176}
   m_Mesh: {fileID: -1579241630799410176, guid: ef624215e4c5a72439984e97a6318637, type: 3}
+--- !u!95 &2133460180
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133460176}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!54 &85543367377159979
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10051,6 +12277,7 @@ GameObject:
   - component: {fileID: 2438656853152614573}
   - component: {fileID: 4438501007539776117}
   - component: {fileID: 4636069369870833887}
+  - component: {fileID: 4636069369870833888}
   m_Layer: 0
   m_Name: Icosphere.001
   m_TagString: Untagged
@@ -10317,7 +12544,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450651619310380}
-  - component: {fileID: 919132147880124823}
   m_Layer: 0
   m_Name: asteroids
   m_TagString: Untagged
@@ -10325,26 +12551,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &919132147880124823
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132147880124822}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4779cc27f19cb4a46b5574027441ec70, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1052585579352095028
 GameObject:
   m_ObjectHideFlags: 0
@@ -10479,7 +12685,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8981510429940171296}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -94, y: -0, z: -34}
+  m_LocalPosition: {x: -79, y: 0, z: -24}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10589,7 +12795,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117214286392640810}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 42, y: -0, z: -25}
+  m_LocalPosition: {x: 46, y: 0, z: -12}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10835,6 +13041,7 @@ GameObject:
   - component: {fileID: 5951265924149632566}
   - component: {fileID: 2342156431432484366}
   - component: {fileID: 6652253183117952437}
+  - component: {fileID: 6652253183117952438}
   m_Layer: 0
   m_Name: Icosphere
   m_TagString: Untagged
@@ -11230,6 +13437,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &4636069369870833888
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117214286392640810}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4680115388506451479
 GameObject:
   m_ObjectHideFlags: 0
@@ -11429,7 +13656,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8582293572772995771}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 84, y: -0, z: -34}
+  m_LocalPosition: {x: 88, y: 0, z: -23}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11486,7 +13713,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6443852218001156346}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 4, y: -0, z: -23}
+  m_LocalPosition: {x: 4, y: 0, z: -12}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11501,7 +13728,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4105671972358625701}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -37, y: -0, z: -26}
+  m_LocalPosition: {x: -37, y: 0, z: -18}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11561,6 +13788,7 @@ GameObject:
   - component: {fileID: 5944756550466943754}
   - component: {fileID: 3399627852541126404}
   - component: {fileID: 5509654437703748726}
+  - component: {fileID: 6443852218001156347}
   m_Layer: 0
   m_Name: Icosphere.002
   m_TagString: Untagged
@@ -11568,6 +13796,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &6443852218001156347
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6443852218001156346}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!33 &6568483056353514448
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -11618,6 +13866,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &6652253183117952438
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4105671972358625701}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!23 &6713253549240218071
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11963,6 +14231,7 @@ GameObject:
   - component: {fileID: 5620194016784792049}
   - component: {fileID: 8297442147604740609}
   - component: {fileID: 5268142632507144687}
+  - component: {fileID: 8582293572772995772}
   m_Layer: 0
   m_Name: Icosphere.003
   m_TagString: Untagged
@@ -11970,6 +14239,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &8582293572772995772
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8582293572772995771}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!23 &8846718020011422053
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12045,6 +14334,7 @@ GameObject:
   - component: {fileID: 1885819210837187021}
   - component: {fileID: 467713618687207761}
   - component: {fileID: 776046733426758197}
+  - component: {fileID: 8981510429940171297}
   m_Layer: 0
   m_Name: Icosphere.004
   m_TagString: Untagged
@@ -12052,6 +14342,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &8981510429940171297
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8981510429940171296}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2264c109a46e0d346b67196815fab331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!23 &9182916213065177860
 MeshRenderer:
   m_ObjectHideFlags: 0
