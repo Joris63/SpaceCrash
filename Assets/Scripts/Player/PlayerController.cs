@@ -92,6 +92,7 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateAbilityInputs()
     {
+        Debug.Log("takes input");
         if (abilityInput)
             abilityController.UseAbility();
     }
