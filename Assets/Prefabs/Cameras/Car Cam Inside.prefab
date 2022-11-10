@@ -64,14 +64,14 @@ MonoBehaviour:
   m_LookaheadIgnoreY: 0
   m_HorizontalDamping: 0.5
   m_VerticalDamping: 0.5
-  m_ScreenX: 0.503125
+  m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0.01
   m_SoftZoneWidth: 0.01
   m_SoftZoneHeight: 0.05
   m_BiasX: 0
-  m_BiasY: 0.3999993
+  m_BiasY: 0.39999932
   m_CenterOnActivate: 1
 --- !u!114 &1110503659751007949
 MonoBehaviour:
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 1110503659768179255}
   - component: {fileID: 1728343233}
   m_Layer: 0
-  m_Name: Car Cam
+  m_Name: Car Cam Inside
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -145,7 +145,7 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 12
+  m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
