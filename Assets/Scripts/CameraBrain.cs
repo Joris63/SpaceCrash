@@ -19,7 +19,7 @@ public class CameraBrain : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (GameManager.main.isOutisdeField && currentlyActiveCamera.name != "Car cam Outside")
+        if (GameManager.main.isOutsideField && currentlyActiveCamera.name != "Car cam Outside")
         {
             SetActiveCamera("Car Cam Outside");
         }

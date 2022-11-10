@@ -56,6 +56,7 @@ public class GameManager : MonoBehaviour
     public bool leaderboardOpen { get; private set; } = false;
 
     public bool initialMainMenu = true;
+    public bool isOutsideField = false;
 
     private void OnEnable()
     {
