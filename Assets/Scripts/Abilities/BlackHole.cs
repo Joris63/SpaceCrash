@@ -41,7 +41,7 @@ public class BlackHole : MonoBehaviour
             if (timeRunning >= activationTime + pullTime)
             {
                 isActivated = false;
-                BlackHoleExplode();
+                GetComponent<Animator>().Play("BlackHoleExplosion");
             }
             else if (timeRunning >= activationTime)
             {
@@ -56,10 +56,12 @@ public class BlackHole : MonoBehaviour
         if (!isActivated)
         {
             isActivated = true;
+            
+            //blackHole = Instantiate(blackHoleEffectPrefab, transform.position, Quaternion.identity, container);
         }
     }
 
-    private void BlackHolePull()
+    public void BlackHolePull()
     {
         foreach (Rigidbody rigidbody in GravityController.main.rigidbodies)
         {
@@ -75,13 +77,13 @@ public class BlackHole : MonoBehaviour
         }
     }
 
-    private void BlackHoleExplode()
+    public void BlackHoleExplode()
     {
         foreach (Rigidbody rigidbody in GravityController.main.rigidbodies)
         {
             CarHealth carHealth = GetComponent<CarHealth>();
             rigidbody.AddExplosionForce(explosionStrength, transform.position, explosionRadius, 0f, ForceMode.VelocityChange);
-            //AudioController.main.PlayOneShot(gameObject.transform.position, explosionAudioClip, 1f, explosionSoundVolume);
+            AudioController.main.PlayOneShot(gameObject.transform.position, explosionAudioClip, 1f, explosionSoundVolume);
 
             if (carHealth)
             {

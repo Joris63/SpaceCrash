@@ -942,63 +942,7 @@ MonoBehaviour:
     maxHandbrakeTorque: 20000
     brakeTorque: 20000
     driftSidewaysFriction: 0.3
-    torqueCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: -3
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0
-        value: 2
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 3
-        value: 0
-        inSlope: 0.00038649997
-        outSlope: 0.00038649997
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.7002653
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    aerialDragCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0.112032704
-        outSlope: 0.112032704
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0.16909817
-      - serializedVersion: 3
-        time: 3.5
-        value: 1
-        inSlope: 0.6604617
-        outSlope: 0.6604617
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.084880486
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
+    rotateDuration: 1
     downForce: 100
     slipLimit: 0.3
     flipDuration: 0.8
@@ -1558,63 +1502,7 @@ MonoBehaviour:
     maxHandbrakeTorque: 20000
     brakeTorque: 20000
     driftSidewaysFriction: 0.3
-    torqueCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: -3
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0
-        value: 2
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 3
-        value: 0
-        inSlope: 0.00038649997
-        outSlope: 0.00038649997
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.7002653
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    aerialDragCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0.112032704
-        outSlope: 0.112032704
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0.16909817
-      - serializedVersion: 3
-        time: 3.5
-        value: 1
-        inSlope: 0.6604617
-        outSlope: 0.6604617
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.084880486
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
+    rotateDuration: 1
     downForce: 100
     slipLimit: 0.3
     flipDuration: 0.8
@@ -2996,63 +2884,7 @@ MonoBehaviour:
     maxHandbrakeTorque: 20000
     brakeTorque: 20000
     driftSidewaysFriction: 0.3
-    torqueCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: -3
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0
-        value: 2
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 3
-        value: 0
-        inSlope: 0.00038649997
-        outSlope: 0.00038649997
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.7002653
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    aerialDragCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0.112032704
-        outSlope: 0.112032704
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0.16909817
-      - serializedVersion: 3
-        time: 3.5
-        value: 1
-        inSlope: 0.6604617
-        outSlope: 0.6604617
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.084880486
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
+    rotateDuration: 1
     downForce: 100
     slipLimit: 0.3
     flipDuration: 0.8
@@ -4412,63 +4244,7 @@ MonoBehaviour:
     maxHandbrakeTorque: 20000
     brakeTorque: 20000
     driftSidewaysFriction: 0.3
-    torqueCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: -3
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0
-        value: 2
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 3
-        value: 0
-        inSlope: 0.00038649997
-        outSlope: 0.00038649997
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.7002653
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    aerialDragCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0.112032704
-        outSlope: 0.112032704
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0.16909817
-      - serializedVersion: 3
-        time: 3.5
-        value: 1
-        inSlope: 0.6604617
-        outSlope: 0.6604617
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.084880486
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
+    rotateDuration: 1
     downForce: 100
     slipLimit: 0.3
     flipDuration: 0.8
@@ -8129,63 +7905,7 @@ MonoBehaviour:
     maxHandbrakeTorque: 20000
     brakeTorque: 20000
     driftSidewaysFriction: 0.3
-    torqueCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: -3
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0
-        value: 2
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 3
-        value: 0
-        inSlope: 0.00038649997
-        outSlope: 0.00038649997
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.7002653
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    aerialDragCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0.112032704
-        outSlope: 0.112032704
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0.16909817
-      - serializedVersion: 3
-        time: 3.5
-        value: 1
-        inSlope: 0.6604617
-        outSlope: 0.6604617
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.084880486
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
+    rotateDuration: 1
     downForce: 100
     slipLimit: 0.3
     flipDuration: 0.8
