@@ -54,8 +54,7 @@ public class CarConfig
     public float driftSidewaysFriction = 1.5f;
 
     [Header("Aerial Settings")]
-    public AnimationCurve torqueCurve = AnimationCurve.Linear(0.0f, 0.0f, 5.0f, 1.0f);
-    public AnimationCurve aerialDragCurve = AnimationCurve.Linear(0.0f, 0.0f, 5.0f, 1.0f);
+    public float rotateDuration = 1f;
 
     [Header("Other Settings")]
     public float downForce = 5f;
@@ -98,6 +97,8 @@ public class CarController : MonoBehaviour
     private ParticleSystem ps;
     private Wheel[] wheels;
 
+    private Vector3 downDirection;
+
     private float currentTorque;
     private float currentSteerAngle;
     private int currentGear;
@@ -105,17 +106,17 @@ public class CarController : MonoBehaviour
     private float revs;
     private Vector3 originalCenterOfMass;
     private float oldRotation;
-    private float oldDrag;
     private float oldExtremumSlip;
     private float oldStiffness;
     private float carAngle;
     private float driftReleased;
 
+    private bool isRotating = false;
+
     // ---------------
     // Input variables & update method
     public float verticalInput { get; set; }
     public float horizontalInput { get; set; }
-    public float rollInput { get; set; }
     public bool handBrakeInput { get; set; }
     public bool unflipCarInput { get; set; }
 
@@ -130,7 +131,6 @@ public class CarController : MonoBehaviour
     {
         verticalInput = vertical;
         horizontalInput = horizontal;
-        rollInput = roll;
         handBrakeInput = handBrake;
         unflipCarInput = unflip;
     }
@@ -146,8 +146,6 @@ public class CarController : MonoBehaviour
         // Set center of mass
         originalCenterOfMass = rb.centerOfMass;
         rb.centerOfMass = COM.localPosition;
-
-        oldDrag = rb.drag;
 
         //Copy wheels in public property
         wheels = new Wheel[4] {
@@ -188,6 +186,10 @@ public class CarController : MonoBehaviour
 
     private void Update()
     {
+        downDirection = -(GravityController.main.transform.position - transform.position).normalized;
+
+        Debug.DrawRay(GravityController.main.transform.position, downDirection * 10, Color.blue);
+
         if (ps)
         {
             ps.transform.localRotation = Quaternion.LookRotation(ps.transform.parent.InverseTransformDirection(Vector3.up), ps.transform.up);
@@ -197,14 +199,6 @@ public class CarController : MonoBehaviour
         {
             return;
         }
-
-        /*
-        if (gameObject.transform.position.y < -10f)
-        {
-            isDestroyed = true;
-            OnDestroyed();
-        }
-        */
 
         for (int i = 0; i < wheels.Length; i++)
         {
@@ -245,15 +239,15 @@ public class CarController : MonoBehaviour
         HandleMove();
     }
 
-    private bool CheckIfGrounded()
+    private bool CheckIfGrounded(bool fullyGrounded = true)
     {
-        bool result = true;
+        bool result = fullyGrounded;
 
         foreach (Wheel wheel in wheels)
         {
             if (!wheel.isGrounded)
             {
-                result = false;
+                result = !fullyGrounded;
                 break;
             }
         }
@@ -319,15 +313,8 @@ public class CarController : MonoBehaviour
 
         ApplyDrift();
 
-        if (!isGrounded)
-        {
-            ApplyAerialMovement();
-            rb.drag = carConfig.aerialDragCurve.Evaluate(convertedCurrentSpeed / 100f);
-        }
-        else
-        {
-            rb.drag = oldDrag;
-        }
+
+        StabilizeCar();
 
         if (!isGrounded && carAngle > .85f && unflipCarInput)
         {
@@ -341,27 +328,45 @@ public class CarController : MonoBehaviour
         TractionControl();
     }
 
-    private void ApplyAerialMovement()
+    private void StabilizeCar()
     {
-        float dt = Time.fixedDeltaTime;
+        if (!isGrounded && !isRotating)
+        {
+            StartCoroutine("RotateCarUpright");
+        }
+        
+        if(CheckIfGrounded(false) && isRotating)
+        {
+            isRotating = false;
+            StopCoroutine("RotateCarUpright");
+        }
+    }
 
-        bool isKeyboard = player == null || player.deviceType == "Keyboard";
+    
 
-        float rollRotation = (isKeyboard ? rollInput : horizontalInput) * carConfig.torqueCurve.Evaluate(rb.angularVelocity.z) * dt;
-        float pitchRotation = (isKeyboard ? horizontalInput : verticalInput) * carConfig.torqueCurve.Evaluate(rb.angularVelocity.x) / 2 * dt;
-        float yawRotation = (isKeyboard ? verticalInput : horizontalInput) * carConfig.torqueCurve.Evaluate(rb.angularVelocity.y) * dt;
+    private IEnumerator RotateCarUpright()
+    {
+        isRotating = true;
 
+        float timeElapsed = 0;
+        Quaternion startRotation = transform.rotation;
+        Quaternion targetRotation = Quaternion.LookRotation(transform.forward, -downDirection);
 
-        rb.AddTorque(transform.forward * rollRotation, ForceMode.VelocityChange);
-        rb.AddTorque(transform.right * yawRotation, ForceMode.VelocityChange);
-        rb.AddTorque(transform.up * pitchRotation, ForceMode.VelocityChange);
+        while (timeElapsed < carConfig.rotateDuration)
+        {
+            transform.rotation = Quaternion.Slerp(startRotation, targetRotation, timeElapsed / carConfig.rotateDuration);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        isRotating = false;
     }
 
     private IEnumerator FlipCar()
     {
         float timeElapsed = 0;
         Vector3 startPosition = transform.position;
-        Vector3 targetPosition = transform.position + Vector3.up * 1.5f;
+        Vector3 targetPosition = transform.position - downDirection * 1.5f;
         Quaternion startRotation = transform.rotation;
         Quaternion targetRotation = transform.rotation * Quaternion.Euler(0, 0, 180);
 
@@ -410,7 +415,7 @@ public class CarController : MonoBehaviour
     {
         Transform wheelContainer = levelManager != null ? levelManager.wheelContainer : null;
 
-        wheel.wheelView.SetParent(wheelContainer);
+        wheel.wheelView.SetParent(wheelContainer, true);
         wheel.wheelCollider.gameObject.SetActive(false);
 
         Rigidbody wheelRb = wheel.wheelView.gameObject.AddComponent<Rigidbody>();
