@@ -13,7 +13,7 @@ GameObject:
   m_Layer: 0
   m_Name: black hole
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d65fa806536100b439a8032da8c3d850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  influenceRange: 100
+  influenceRange: 50
   intensity: 4
   activationTime: 2
   pullTime: 4

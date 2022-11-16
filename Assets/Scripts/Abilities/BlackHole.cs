@@ -88,5 +88,6 @@ public class BlackHole : MonoBehaviour
                 carHealth.AddCarDamage(this.gameObject, HitLocation.BOTTOM, explosionDamage);
             }
         }
+        Destroy(gameObject);
     }
 }
