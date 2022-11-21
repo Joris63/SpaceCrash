@@ -1,18 +1,8 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
-
 public class CarAI : StateMachine
 {
-    public enum DrivingMode { Pursue, Idle }
-
-    [Space(12)]
-    [Tooltip("This box is used to shoot the detection rays from. X and Z are used for size, Y is used for height placement.")]
-    public Vector3 boxSize;
-    [HideInInspector] public Rigidbody mainRb;
     [HideInInspector] public List<CarController> cars = new List<CarController>();
 
     // AI Atrributes
@@ -22,29 +12,24 @@ public class CarAI : StateMachine
     public float aggression = 0.25f;
 
     // Blackboard Variables
-    [HideInInspector] public DrivingMode currentDrivingMode;
     [HideInInspector] public bool hitOpponent = false;
-    [HideInInspector] public bool gotHit = false;
     [HideInInspector] public float idleTime;
     [HideInInspector] public float useAbilityCooldown;
 
     // States
     [HideInInspector] public BaseState pursuing;
-    [HideInInspector] public BaseState avoiding;
     [HideInInspector] public BaseState reversing;
     [HideInInspector] public BaseState idle;
 
-    private float gotHitDebounce = 0f;
+    private CarController controller;
 
     public void InitializeAI()
     {
-        mainRb = GetComponent<Rigidbody>();
+        controller = GetComponent<CarController>();
 
-        CarController controller = GetComponent<CarController>();
-        pursuing = new Pursuing(controller, this);
-        avoiding = new Avoiding(controller, this);
-        reversing = new Reversing(controller, this);
-        idle = new Idle(controller, this);
+        pursuing = new Pursuing(this);
+        reversing = new Reversing(this);
+        idle = new Idle(this);
 
         for (int i = 0; i < transform.parent.childCount; i++)
         {
@@ -56,43 +41,31 @@ public class CarAI : StateMachine
         int rndmStateNmbr = Random.Range(1, 4);
         if (rndmStateNmbr == 3)
         {
-            currentDrivingMode = DrivingMode.Idle;
             idleTime = Random.Range(5f, 10f);
             Initialize(idle);
         }
         else
         {
-            currentDrivingMode = DrivingMode.Pursue;
             Initialize(pursuing);
         }
     }
 
-    private void LateUpdate()
+    public void SetVertical(float v)
     {
-        gotHitDebounce -= Time.deltaTime;
+        controller.verticalInput = v;
+    }
+
+    public void SetHorizontal(float h)
+    {
+        controller.horizontalInput = h;
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.parent == transform.parent)
+        if (collision.transform.parent == transform.parent && currentState != reversing)
         {
-            bool isPossibleAttacker = Mathf.Abs(Vector3.SignedAngle(transform.forward, collision.relativeVelocity.normalized, Vector3.up)) > 100f;
-
-            if (isPossibleAttacker && currentState != reversing) hitOpponent = true;
-            else if (currentDrivingMode == DrivingMode.Idle && gotHitDebounce <= 0f)
-            {
-                gotHit = true;
-                gotHitDebounce = 0.4f;
-            }
+            bool isPossibleAttacker = Mathf.Abs(Vector3.SignedAngle(transform.forward, (collision.transform.position - transform.position).normalized, Vector3.up)) <= 60f;
+            hitOpponent = isPossibleAttacker;
         }
     }
-
-#if UNITY_EDITOR
-    private void OnDrawGizmosSelected()
-    {
-        Handles.color = Color.black;
-        Handles.matrix = Matrix4x4.TRS(transform.position, transform.rotation, transform.lossyScale);
-        Handles.DrawWireCube(new Vector3(0, boxSize.y, 0), new Vector3(boxSize.x, 0, boxSize.z));
-    }
-#endif
 }

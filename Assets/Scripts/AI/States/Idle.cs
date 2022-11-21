@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class Idle : Observant
+public class Idle : BaseState
 {
     private float randomOffset;
 
-    public Idle(CarController controller, CarAI carAI) : base(controller, carAI) { }
+    public Idle(CarAI carAI) : base(carAI) { }
 
     public override void Enter()
     {
@@ -13,7 +13,7 @@ public class Idle : Observant
         randomOffset = Random.Range(0f, 999f);
 
         // Set acceleration direction
-        controller.verticalInput = 1f;
+        carAI.SetVertical(1f);
     }
 
     public override void LogicUpdate()
@@ -25,20 +25,18 @@ public class Idle : Observant
         // Smooth random number between -1 and 1 using Perlin noise
         float steerValue = Mathf.PerlinNoise(Time.time + randomOffset, 0f) * 2f - 1f;
 
-        // Set acceleration & steering direction
-        if (controller.isGrounded)
-        {
-            controller.verticalInput = 1f;
-            controller.horizontalInput = Mathf.Abs(steerValue) > 0.3f ? Mathf.Sign(steerValue) : 0f;
-        }
-        
-
-        carAI.idleTime -= Time.deltaTime;
-        if (carAI.idleTime <= 0f) carAI.currentDrivingMode = CarAI.DrivingMode.Pursue;
+        // Set steering direction
+        float horizontal = Mathf.Abs(steerValue) > 0.2f ? Mathf.Sign(steerValue) : 0f;
+        carAI.SetHorizontal(horizontal);
 
         // Transition
-        if (carAI.currentDrivingMode == CarAI.DrivingMode.Pursue) carAI.ChangeState(carAI.pursuing);
-        else if (currentDetectResult == DetectResult.Left || currentDetectResult == DetectResult.Right) carAI.ChangeState(carAI.avoiding);
+        carAI.idleTime -= Time.deltaTime;
+        if (carAI.hitOpponent)
+        {
+            carAI.hitOpponent = false;
+            carAI.ChangeState(carAI.reversing);
+        }
+        else if (carAI.idleTime <= 0f) carAI.ChangeState(carAI.pursuing);
     }
 
     public override void Exit()
