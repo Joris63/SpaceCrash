@@ -243,7 +243,7 @@ MonoBehaviour:
     maxHandbrakeTorque: 20000
     brakeTorque: 20000
     driftSidewaysFriction: 0.3
-    rotateDuration: 0.6
+    rotateDuration: 0.3
     downForce: 100
     slipLimit: 0.3
     flipDuration: 0.8

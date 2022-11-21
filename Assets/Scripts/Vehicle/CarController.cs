@@ -97,7 +97,7 @@ public class CarController : MonoBehaviour
     private ParticleSystem ps;
     private Wheel[] wheels;
 
-    private Vector3 downDirection;
+    public Vector3 downDirection { get; private set; }
 
     private float currentTorque;
     private float currentSteerAngle;
@@ -334,15 +334,15 @@ public class CarController : MonoBehaviour
         {
             StartCoroutine("RotateCarUpright");
         }
-        
-        if(CheckIfGrounded(false) && isRotating)
+
+        if (CheckIfGrounded(false) && isRotating)
         {
             isRotating = false;
             StopCoroutine("RotateCarUpright");
         }
     }
 
-    
+
 
     private IEnumerator RotateCarUpright()
     {
