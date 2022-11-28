@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c1c5b128b4325347b98e74cc6806f45, type: 3}
+  m_Name: Asteroid Ability
+  m_EditorClassIdentifier: 
+  abilityName: Asteroid
+  abilityIcon: {fileID: 0}
+  asteroid: {fileID: 8052547164017269795, guid: 047ee9e0de500484fb376075310c110b,
+    type: 3}

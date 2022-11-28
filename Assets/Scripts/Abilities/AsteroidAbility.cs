@@ -3,32 +3,54 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Abilities/Asteroid")]
 public class AsteroidAbility : Ability
 {
-    private Transform car;
     public GameObject asteroid;
-    private bool readytoThrow;
+    private bool activated;
+    private bool collided;
+    private Rigidbody rb;
 
     public override void Obtained()
     {
         base.Obtained();
 
-        readytoThrow = true;
+        activated = false;
     }
 
     public override void Activated()
     {
         base.Activated();
 
-        if (readytoThrow)
+        if (!activated)
         {
-            Throw();
+            var projectile = Instantiate(asteroid, carController.transform.position + Vector3.up + Vector3.up + Vector3.up + Vector3.up + Vector3.up, carController.transform.rotation);
+            rb = projectile.GetComponent<Rigidbody>();
+            rb.velocity = carController.transform.TransformDirection(new Vector3(0, 0, 100));
+            activated = true;
         }
     }
 
-    private void Throw()
+    public override void LogicUpdate()
     {
-        readytoThrow = false;
-        Instantiate(asteroid, car.position, Quaternion.identity);
+        base.LogicUpdate();
+
+        if (rb)
+        {
+            collided = rb.GetComponent<AsteroidCollision>().collided;
+            if (activated && !collided)
+            {
+                Debug.Log(collided);
+                rb.AddRelativeForce(Vector3.forward * 10);
+            }
+            else
+            {
+                activated = false;
+                Destroy(rb.gameObject);
+            }
+        }
+
     }
 
-
+    public override void CarDestroyed()
+    {
+        base.CarDestroyed();
+    }
 }
