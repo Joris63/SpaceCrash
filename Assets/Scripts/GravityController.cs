@@ -7,6 +7,8 @@ public class GravityController : MonoBehaviour
 {
     public static GravityController main;
 
+    public bool inverted = false;
+
     private List<Rigidbody> rigidbodies = new List<Rigidbody>();
 
     private void Awake()
@@ -15,7 +17,7 @@ public class GravityController : MonoBehaviour
         rigidbodies = FindObjectsOfType<Rigidbody>().ToList();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         ApplyGravity();
     }

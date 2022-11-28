@@ -1,14 +1,12 @@
 public class BaseState
 {
-    public CarController controller;
     protected CarAI carAI;
     protected AbilityController abilityController;
 
-    public BaseState(CarController controller, CarAI carAI)
+    public BaseState(CarAI carAI)
     {
-        this.controller = controller;
         this.carAI = carAI;
-        abilityController = controller.GetComponent<AbilityController>();
+        abilityController = carAI.GetComponent<AbilityController>();
     }
 
     public virtual void Enter() { }
