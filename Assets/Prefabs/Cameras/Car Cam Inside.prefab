@@ -72,7 +72,7 @@ MonoBehaviour:
   m_SoftZoneHeight: 0.05
   m_BiasX: 0
   m_BiasY: 0.39999932
-  m_CenterOnActivate: 1
+  m_CenterOnActivate: 0
 --- !u!114 &1110503659751007949
 MonoBehaviour:
   m_ObjectHideFlags: 0
