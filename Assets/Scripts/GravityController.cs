@@ -7,6 +7,8 @@ public class GravityController : MonoBehaviour
 {
     public static GravityController main;
 
+    public bool inverted = false;
+
     private List<Rigidbody> rigidbodies = new List<Rigidbody>();
 
     private void Awake()
