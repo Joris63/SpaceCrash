@@ -30,6 +30,14 @@ public class Pursuing : BaseState
 
         if (carAI.currentState != this) return;
 
+        // Handle abilities
+        carAI.useAbilityCooldown -= Time.deltaTime;
+        if (carAI.useAbilityCooldown <= 0f)
+        {
+            carAI.useAbilityCooldown = Random.Range(3f, 10f);
+            abilityController.UseAbility();
+        }
+
         // Assign target
         float closestCar = 999f;
         CarController newTarget = null;

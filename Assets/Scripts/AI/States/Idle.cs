@@ -22,6 +22,14 @@ public class Idle : BaseState
 
         if (carAI.currentState != this) return;
 
+        // Handle abilities
+        carAI.useAbilityCooldown -= Time.deltaTime;
+        if (carAI.useAbilityCooldown <= 0f)
+        {
+            carAI.useAbilityCooldown = Random.Range(3f, 10f);
+            abilityController.UseAbility();
+        }
+
         // Smooth random number between -1 and 1 using Perlin noise
         float steerValue = Mathf.PerlinNoise(Time.time + randomOffset, 0f) * 2f - 1f;
 
