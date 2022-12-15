@@ -203,10 +203,8 @@ public class CarController : MonoBehaviour
     {
         float speed = rb.velocity.magnitude;
 
-        Debug.Log(speed);
         if (speed > maxSpeed && boostDeactivateTime < timeAlive)
         {
-            Debug.Log("reduce speed");
             rb.velocity -= 0.01f * rb.velocity;
         }
     }
