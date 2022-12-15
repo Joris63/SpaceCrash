@@ -19,7 +19,7 @@ public class CarController : MonoBehaviour
     public bool isBot = false;
 
     [Header("Aerial Settings")]
-    public float rotateDuration = 1f;
+    public float stabilizationTorque = 100f;
 
     [Header("Other Settings")]
     public float downForce = 5f;
@@ -47,7 +47,6 @@ public class CarController : MonoBehaviour
     private ParticleSystem ps;
     private Vector3 originalCenterOfMass;
 
-    private bool isRotating = false;
     private float carAngle;
     private float currentSteerAngle = 0;
 
@@ -146,7 +145,8 @@ public class CarController : MonoBehaviour
         // Slow down the car if no vertical input is present
         rb.drag = verticalInput == 0 ? 1f : 0f;
 
-        carAngle = Vector3.Dot(transform.up, Vector3.down);
+        carAngle = Vector3.Dot(transform.up, downDirection);
+
     }
 
     private void FixedUpdate()
@@ -170,7 +170,7 @@ public class CarController : MonoBehaviour
 
         foreach (WheelAnchor wheel in wheelAnchors)
         {
-            if (!wheel.isGrounded)
+            if ((!wheel.isGrounded && fullyGrounded) || (wheel.isGrounded && !fullyGrounded))
             {
                 result = !fullyGrounded;
                 break;
@@ -178,6 +178,21 @@ public class CarController : MonoBehaviour
         }
 
         return result;
+    }
+
+    private bool CheckFalling()
+    {
+        float fallVelocity = Vector3.Dot(rb.velocity, downDirection);
+
+        if (Mathf.Approximately(fallVelocity, 0))
+            fallVelocity = 0f;
+
+        if (fallVelocity > 0)
+        {
+            return true;
+        }
+
+        return false;
     }
 
     private void HandleMove()
@@ -194,34 +209,16 @@ public class CarController : MonoBehaviour
 
     private void StabilizeCar()
     {
-        if (!isGrounded && !isRotating)
+        if (!CheckIfGrounded(false) && CheckFalling())
         {
-            StartCoroutine("RotateCarUpright");
+
+            Vector3 locUp = transform.up;
+            Vector3 wsUp = -downDirection;
+            Vector3 axis = Vector3.Cross(locUp, wsUp);
+            float force = stabilizationTorque;
+
+            rb.AddTorque(axis * force);
         }
-
-        if (CheckIfGrounded(false) && isRotating)
-        {
-            isRotating = false;
-            StopCoroutine("RotateCarUpright");
-        }
-    }
-
-    private IEnumerator RotateCarUpright()
-    {
-        isRotating = true;
-
-        float timeElapsed = 0;
-        Quaternion startRotation = transform.rotation;
-        Quaternion targetRotation = Quaternion.LookRotation(transform.forward, -downDirection);
-
-        while (timeElapsed < rotateDuration)
-        {
-            transform.rotation = Quaternion.Slerp(startRotation, targetRotation, timeElapsed / rotateDuration);
-            timeElapsed += Time.deltaTime;
-            yield return null;
-        }
-
-        isRotating = false;
     }
 
     private IEnumerator FlipCar()

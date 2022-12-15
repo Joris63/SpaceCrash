@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 36e5702abaa341a41a1b75914f89cad6, type: 2}
   color: {r: 0, g: 4, b: 0, a: 1}
-  jumpForce: 60
+  jumpForce: 45

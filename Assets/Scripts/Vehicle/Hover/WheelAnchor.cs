@@ -27,38 +27,40 @@ public class WheelAnchor : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Physics.Raycast(transform.position, -transform.up, out RaycastHit hit, hoverHeight, controller.ground))
+        if (!Physics.Raycast(transform.position, -transform.up, out RaycastHit hit, hoverHeight, controller.ground))
         {
-            isGrounded = true;
+            isGrounded = false;
+            return;
+        }
 
-            // Calculate suspension force
-            float offset = hoverHeight - hit.distance;
-            Vector3 tireVelocity = controller.rb.GetPointVelocity(transform.position);
-            float desiredVelocity = Vector3.Dot(transform.up, tireVelocity);
-            float suspensionForce = (offset * springStrength) - (desiredVelocity * springDamping);
+        isGrounded = true;
 
-            controller.rb.AddForceAtPosition(transform.up * suspensionForce, transform.position);
+        // Calculate suspension force
+        float offset = hoverHeight - hit.distance;
+        Vector3 tireVelocity = controller.rb.GetPointVelocity(transform.position);
+        float desiredVelocity = Vector3.Dot(transform.up, tireVelocity);
+        float suspensionForce = (offset * springStrength) - (desiredVelocity * springDamping);
 
-            // Calculate steering force
-            steeringForce = (-Vector3.Dot(transform.right, tireVelocity) * grip) / Time.fixedDeltaTime;
+        controller.rb.AddForceAtPosition(transform.up * suspensionForce, transform.position);
 
-            controller.rb.AddForceAtPosition(transform.right * steeringForce, transform.position);
+        // Calculate steering force
+        steeringForce = (-Vector3.Dot(transform.right, tireVelocity) * grip) / Time.fixedDeltaTime;
 
-            if (isAccelerator)
+        controller.rb.AddForceAtPosition(transform.right * steeringForce, transform.position);
+
+        if (isAccelerator)
+        {
+            // Calculate acceleration and braking force
+            if (controller.verticalInput != 0f)
             {
-                // Calculate acceleration and braking force
-                if (controller.verticalInput != 0f)
-                {
-                    float currentSpeed = Vector3.Dot(controller.rb.transform.forward, controller.rb.velocity);
-                    float normalizedSpeed = Mathf.Clamp01(Mathf.Abs(currentSpeed) / controller.maxSpeed);
-                    torqueForce = controller.torqueCurve.Evaluate(normalizedSpeed) * controller.verticalInput;
+                float currentSpeed = Vector3.Dot(controller.rb.transform.forward, controller.rb.velocity);
+                float normalizedSpeed = Mathf.Clamp01(Mathf.Abs(currentSpeed) / controller.maxSpeed);
+                torqueForce = controller.torqueCurve.Evaluate(normalizedSpeed) * controller.verticalInput;
 
-                    controller.rb.AddForceAtPosition(transform.forward * torqueForce * controller.maxTorquePower, transform.position);
-                }
+                controller.rb.AddForceAtPosition(transform.forward * torqueForce * controller.maxTorquePower, transform.position);
             }
         }
 
-        isGrounded = false;
     }
 
 #if UNITY_EDITOR

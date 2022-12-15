@@ -317,6 +317,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5744906533498427745, guid: 2a42f21b5754a49458fe15593fb7bc1b,
+        type: 3}
+      propertyPath: rotationSpeedMultiplierCurve.m_Curve.Array.data[1].time
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744906533498427745, guid: 2a42f21b5754a49458fe15593fb7bc1b,
+        type: 3}
+      propertyPath: rotationSpeedMultiplierCurve.m_Curve.Array.data[0].value
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744906533498427745, guid: 2a42f21b5754a49458fe15593fb7bc1b,
+        type: 3}
+      propertyPath: rotationSpeedMultiplierCurve.m_Curve.Array.data[1].value
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a42f21b5754a49458fe15593fb7bc1b, type: 3}
 --- !u!1 &315127320
@@ -399,7 +414,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315127320}
   m_LocalRotation: {x: -0.041816834, y: 0, z: 0, w: 0.9991253}
-  m_LocalPosition: {x: 0, y: -40.5, z: -8}
+  m_LocalPosition: {x: 0, y: -38, z: 5.1800003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -758,12 +773,12 @@ PrefabInstance:
     - target: {fileID: 4492127418028254074, guid: 33ef27059adcbbc4aac9d52bcba7762d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -42.5
+      value: -40
       objectReference: {fileID: 0}
     - target: {fileID: 4492127418028254074, guid: 33ef27059adcbbc4aac9d52bcba7762d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 13.18
       objectReference: {fileID: 0}
     - target: {fileID: 4492127418028254074, guid: 33ef27059adcbbc4aac9d52bcba7762d,
         type: 3}
@@ -799,6 +814,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
+        type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
+        type: 3}
+      propertyPath: stability
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
+        type: 3}
+      propertyPath: stabilizationTorque
+      value: 15000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33ef27059adcbbc4aac9d52bcba7762d, type: 3}
@@ -1021,12 +1051,12 @@ PrefabInstance:
     - target: {fileID: 1110503659768179252, guid: 7310ec14439200e4f97c6b9041e24b71,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -40.5
+      value: -38
       objectReference: {fileID: 0}
     - target: {fileID: 1110503659768179252, guid: 7310ec14439200e4f97c6b9041e24b71,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8
+      value: 5.1800003
       objectReference: {fileID: 0}
     - target: {fileID: 1110503659768179252, guid: 7310ec14439200e4f97c6b9041e24b71,
         type: 3}

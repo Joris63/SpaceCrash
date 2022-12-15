@@ -17,11 +17,10 @@ public class ArenaController : MonoBehaviour
     public GameObject Outside;
     public GameObject Inside;
 
-    [Header("Gravity")]
-    public bool inverted = false;
-
     [Header("Healing Sphere")]
     public AnimationCurve speedMultiplierCurve;
+    public AnimationCurve rotationSpeedMultiplierCurve;
+    public bool inverted { get; private set; } = false;
 
     private float healingSphereRadius;
 
@@ -60,7 +59,7 @@ public class ArenaController : MonoBehaviour
         {
             Vector3 direction = (transform.position - obj.rigidbody.transform.position).normalized;
 
-            obj.rigidbody.AddForce(direction * Physics.gravity.y * (inverted ? -1 : 1), ForceMode.Acceleration);
+            obj.rigidbody.AddForce(direction * Physics.gravity.y * (inverted ? -1 : 1) * (obj.timeInCenterSphere > 0 ? .3f : 1), ForceMode.Acceleration);
         }
     }
 
@@ -74,18 +73,22 @@ public class ArenaController : MonoBehaviour
             {
                 obj.timeInCenterSphere += Time.deltaTime;
 
-                // Limit speed 
+                // Limit speed and rotation speed
                 obj.rigidbody.velocity = (speedMultiplierCurve.Evaluate(obj.timeInCenterSphere) / 3.6f) * obj.rigidbody.velocity.normalized;
+                obj.rigidbody.angularVelocity = (rotationSpeedMultiplierCurve.Evaluate(obj.timeInCenterSphere) / 3.6f) * obj.rigidbody.angularVelocity.normalized;
 
-                Debug.Log(obj.carHealth);
                 if (obj.carHealth != null && !obj.carHealth.isHealing)
                 {
                     obj.carHealth.StartHealing();
                 }
             }
-            else if(obj.carHealth != null && obj.carHealth.isHealing)
+            else if (obj.carHealth != null && obj.carHealth.isHealing)
             {
+                if (obj.timeInCenterSphere > 0)
+                    obj.rigidbody.velocity *= 1.5f;
+
                 obj.carHealth.StopHealing();
+                obj.timeInCenterSphere = 0;
             }
         }
     }
