@@ -800,56 +800,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
-        type: 3}
-      propertyPath: torqueCurve.m_Curve.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
-        type: 3}
-      propertyPath: torqueCurve.m_Curve.Array.data[3].time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
-        type: 3}
-      propertyPath: torqueCurve.m_Curve.Array.data[4].value
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
-        type: 3}
-      propertyPath: torqueCurve.m_Curve.Array.data[3].inSlope
-      value: -3.3333333
-      objectReference: {fileID: 0}
-    - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
-        type: 3}
-      propertyPath: torqueCurve.m_Curve.Array.data[4].inSlope
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
-        type: 3}
-      propertyPath: torqueCurve.m_Curve.Array.data[3].inWeight
-      value: 0.33333334
-      objectReference: {fileID: 0}
-    - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
-        type: 3}
-      propertyPath: torqueCurve.m_Curve.Array.data[3].outSlope
-      value: -3.3333333
-      objectReference: {fileID: 0}
-    - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
-        type: 3}
-      propertyPath: torqueCurve.m_Curve.Array.data[4].outSlope
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
-        type: 3}
-      propertyPath: torqueCurve.m_Curve.Array.data[3].outWeight
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
-        type: 3}
-      propertyPath: torqueCurve.m_Curve.Array.data[3].tangentMode
-      value: 34
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33ef27059adcbbc4aac9d52bcba7762d, type: 3}
 --- !u!4 &757037243 stripped
