@@ -4,7 +4,7 @@ public class Reversing : BaseState
 {
     private float reverseTime;
 
-    public Reversing(CarController controller, CarAI carAI) : base(controller, carAI) { }
+    public Reversing(CarAI carAI) : base(carAI) { }
 
     public override void Enter()
     {
@@ -13,10 +13,10 @@ public class Reversing : BaseState
         reverseTime = Random.Range(1f, 2f);
 
         // Set acceleration direction
-        controller.verticalInput = -1f;
+        carAI.SetVertical(-1f);
 
         // Set steering direction
-        controller.horizontalInput = 0f;
+        carAI.SetHorizontal(0f);
     }
 
     public override void LogicUpdate()
@@ -26,8 +26,9 @@ public class Reversing : BaseState
         if (carAI.currentState != this) return;
 
         reverseTime -= Time.deltaTime;
+
         // Transition
-        if (reverseTime <= 0f) carAI.ChangeState(carAI.avoiding);
+        if (reverseTime <= 0f) carAI.ChangeState(carAI.idle);
     }
 
     public override void Exit()

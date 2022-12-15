@@ -174,7 +174,6 @@ public class CarController : MonoBehaviour
         if (isBot)
         {
             ai = gameObject.AddComponent<CarAI>();
-            ai.boxSize = new Vector3(2, 1f, 5);
             ai.InitializeAI();
         }
 
