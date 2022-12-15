@@ -127,3 +127,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f4650855e26124f9c5a765120353ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collided: 0
+  insideMaterial: {fileID: 2100000, guid: add07c1a24a9ec545855c89d1168d388, type: 2}
+  generations: 2

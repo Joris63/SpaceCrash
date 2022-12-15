@@ -367,7 +367,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &410087042
 MonoBehaviour:
@@ -450,7 +450,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &668012315
 GameObject:
@@ -838,6 +838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78edb4728a800044aba1341875cc4cd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inverted: 0
 --- !u!4 &1236794452
 Transform:
   m_ObjectHideFlags: 0
@@ -899,6 +900,38 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2959467708922500008, guid: 05a296b39236f76408c2cc3228044e4a, type: 3}
+--- !u!1 &1816920628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1816920629}
+  m_Layer: 0
+  m_Name: CarContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1816920629
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816920628}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3807942975035059918}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2067200812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1043,7 +1076,7 @@ Transform:
   - {fileID: 2854294334045831867}
   - {fileID: 1968700809530982960}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &506526685181344034
 Transform:
@@ -1556,8 +1589,8 @@ Transform:
   - {fileID: 2125012776}
   - {fileID: 846875246}
   - {fileID: 155665059}
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 1816920629}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4190199015888845654
 MeshFilter:
@@ -1647,7 +1680,7 @@ MonoBehaviour:
     wheelCollider: {fileID: 3629238457168948772}
     wheelView: {fileID: 1222107847}
   COM: {fileID: 2125012776}
-  isBot: 0
+  isBot: 1
   carConfig:
     maxSteerAngle: 35
     steerAngleChangeSpeed: 240
@@ -1699,70 +1732,14 @@ MonoBehaviour:
     fullTorqueOverAllWheels: 7000
     reverseTorque: 1500
     speedType: 1
-    topSpeed: 200
+    topSpeed: 1
     topReverseSpeed: 60
     nrOfGears: 5
     revRangeBoundary: 1
     maxHandbrakeTorque: 20000
     brakeTorque: 20000
     driftSidewaysFriction: 0.3
-    torqueCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: -3
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0
-        value: 2
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 3
-        value: 0
-        inSlope: 0.00038649997
-        outSlope: 0.00038649997
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.7002653
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    aerialDragCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0.112032704
-        outSlope: 0.112032704
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0.16909817
-      - serializedVersion: 3
-        time: 3.5
-        value: 1
-        inSlope: 0.6604617
-        outSlope: 0.6604617
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.084880486
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
+    rotateDuration: 1
     downForce: 100
     slipLimit: 0.3
     flipDuration: 0.8
@@ -1929,7 +1906,7 @@ Transform:
   - {fileID: 7007189983781876970}
   - {fileID: 6769135968333493345}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4861724037117346495
 MeshFilter:
@@ -2169,7 +2146,7 @@ PrefabInstance:
     - target: {fileID: 6957942263185837855, guid: 242c96ebf1834814d88a5acec0e818fc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6957942263185837855, guid: 242c96ebf1834814d88a5acec0e818fc,
         type: 3}

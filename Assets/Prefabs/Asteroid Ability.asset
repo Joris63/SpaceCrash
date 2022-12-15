@@ -16,3 +16,5 @@ MonoBehaviour:
   abilityIcon: {fileID: 0}
   asteroid: {fileID: 8052547164017269795, guid: 047ee9e0de500484fb376075310c110b,
     type: 3}
+  shatteredAsteroid: {fileID: 2744661016193205589, guid: befadaad103d5d74fac445cb2d0cc247,
+    type: 3}

@@ -4,6 +4,7 @@ using UnityEngine;
 public class AsteroidAbility : Ability
 {
     public GameObject asteroid;
+    public ParticleSystem shatteredAsteroid;
     private bool activated;
     private bool collided;
     private Rigidbody rb;
@@ -21,7 +22,7 @@ public class AsteroidAbility : Ability
 
         if (!activated)
         {
-            var projectile = Instantiate(asteroid, carController.transform.position + Vector3.up + Vector3.up + Vector3.up + Vector3.up + Vector3.up, carController.transform.rotation);
+            var projectile = Instantiate(asteroid, carController.transform.position + Vector3.up * 4, carController.transform.rotation);
             rb = projectile.GetComponent<Rigidbody>();
             rb.velocity = carController.transform.TransformDirection(new Vector3(0, 0, 100));
             activated = true;
@@ -43,7 +44,11 @@ public class AsteroidAbility : Ability
             else
             {
                 activated = false;
+
+                var shattered = Instantiate(shatteredAsteroid, rb.position, carController.transform.rotation);
+                shattered.Play();
                 Destroy(rb.gameObject);
+
             }
         }
 
@@ -53,4 +58,6 @@ public class AsteroidAbility : Ability
     {
         base.CarDestroyed();
     }
+
+
 }
