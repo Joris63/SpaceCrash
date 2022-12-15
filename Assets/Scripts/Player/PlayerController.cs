@@ -87,7 +87,7 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateCarInputs()
     {
-        car.UpdateControls(movementInputX, movementInputY, movementInputZ, driftingInput, flipInput);
+        car.UpdateControls(movementInputX, movementInputY, flipInput);
     }
 
     private void UpdateAbilityInputs()

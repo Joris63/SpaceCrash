@@ -75,7 +75,7 @@ public class ArenaController : MonoBehaviour
                 obj.timeInCenterSphere += Time.deltaTime;
 
                 // Limit speed 
-                obj.rigidbody.velocity = (speedMultiplierCurve.Evaluate(obj.timeInCenterSphere) / C.MPHMult) * obj.rigidbody.velocity.normalized;
+                obj.rigidbody.velocity = (speedMultiplierCurve.Evaluate(obj.timeInCenterSphere) / 3.6f) * obj.rigidbody.velocity.normalized;
 
                 Debug.Log(obj.carHealth);
                 if (obj.carHealth != null && !obj.carHealth.isHealing)

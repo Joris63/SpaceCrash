@@ -6,7 +6,7 @@ public class HoverController : MonoBehaviour
     public float maxSpeed = 20f;
     public float maxTorquePower = 60f;
     public AnimationCurve torqueCurve;
-    [SerializeField] private List<HoverAnchor> steeringAnchors;
+    [SerializeField] private List<WheelAnchor> steeringAnchors;
     public LayerMask ground;
     [SerializeField] private Transform centerOfMass;
     [SerializeField] private bool isBot = false;
@@ -32,7 +32,7 @@ public class HoverController : MonoBehaviour
         }
 
         // Set rotation of steering anchors based on horizontal input
-        foreach (HoverAnchor anchor in steeringAnchors)
+        foreach (WheelAnchor anchor in steeringAnchors)
         {
             float desiredRot = horizontalInput == 0 ? 0f : horizontalInput == -1 ? -30f : 30f;
             anchor.transform.localEulerAngles = new Vector3(0, desiredRot, 0);

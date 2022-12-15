@@ -144,10 +144,10 @@ public class CarSound : MonoBehaviour
     {
         //float speed = carController.currentSpeed * (carController.carConfig.speedType == SpeedType.KPH ? C.KPHMult : C.MPHMult);        
 
-        if (carController.convertedCurrentSpeed >= 0)
+        if (carController.currentSpeed >= 0)
         {
             pitchRate = 0;
-            engineAudioSource.pitch = pitchCurve.Evaluate(carController.convertedCurrentSpeed) / 100;
+            engineAudioSource.pitch = pitchCurve.Evaluate(carController.currentSpeed) / 100;
         }
         else if (engineAudioSource.pitch != 1)
         {
@@ -157,7 +157,7 @@ public class CarSound : MonoBehaviour
 
         foreach (var gear in gears)
         {
-            if (carController.convertedCurrentSpeed < gear.maxSpeed && carController.convertedCurrentSpeed > gear.minSpeed)
+            if (carController.currentSpeed < gear.maxSpeed && carController.currentSpeed > gear.minSpeed)
             {
                 int temp = gears.IndexOf(gear);
                 if (temp != currentGear)
