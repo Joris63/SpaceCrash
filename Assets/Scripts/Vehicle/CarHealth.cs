@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine.Events;
+using System.Collections;
 using TMPro;
 
 [System.Serializable]
@@ -31,9 +32,14 @@ public class CarHealth : MonoBehaviour
     [Space(6)]
     [Tooltip("Used to visualize the vitals of the car on the UI.")]
     [SerializeField] public List<Vitals> vitals;
+    public float healingAmount = 5f;
+    public float healingMultiplier = 5f;
+    public float healingMultiplierDuration = 5f;
+    public bool isHealing { get; private set; } = false;
+
 
     private List<Image[]> bars = new List<Image[]>();
-    private float currentHealth;
+    public float currentHealth;
     public GameObject lastCollider { get; private set; }
     private bool isDestroyed = false;
 
@@ -122,7 +128,7 @@ public class CarHealth : MonoBehaviour
         float actualDmg = Mathf.Clamp(damage * vitalDmgMultiplier, 0f, currentHealth);
         currentHealth = Mathf.Clamp(currentHealth - (actualDmg * vitalHealthMultiplier), 0, health);
 
-        if(carOpponent != null)
+        if (carOpponent != null)
         {
             lastCollider = carOpponent.gameObject;
         }
@@ -134,6 +140,33 @@ public class CarHealth : MonoBehaviour
         }
 
         UpdateHealth();
+    }
+
+    public void StartHealing()
+    {
+        isHealing = true;
+        StartCoroutine("HealCar");
+    }
+
+    public void StopHealing()
+    {
+        isHealing = false;
+        StopCoroutine("HealCar");
+    }
+
+    private IEnumerator HealCar()
+    {
+        float timeElapsed = 0;
+
+        while (currentHealth < health)
+        {
+            float multiplier = Mathf.Lerp(0, healingMultiplier, timeElapsed / healingMultiplierDuration);
+            currentHealth += healingAmount * multiplier;
+            timeElapsed += Time.deltaTime;
+
+            UpdateHealth();
+            yield return null;
+        }
     }
 
     private void UpdateHealth()

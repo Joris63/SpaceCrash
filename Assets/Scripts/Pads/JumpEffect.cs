@@ -13,6 +13,8 @@ public class JumpEffect : PadEffect
 
         // apply jump
         CarController carController = car.GetComponent<CarController>();
+
+        car.velocity = car.velocity.normalized * Mathf.Clamp(car.velocity.magnitude, 1, 10);
         car.AddForce(-carController.downDirection * jumpForce, ForceMode.VelocityChange);
     }
 }

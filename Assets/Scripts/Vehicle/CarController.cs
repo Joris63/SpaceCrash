@@ -186,9 +186,9 @@ public class CarController : MonoBehaviour
 
     private void Update()
     {
-        downDirection = -(GravityController.main.transform.position - transform.position).normalized;
+        downDirection = -(ArenaController.main.transform.position - transform.position).normalized;
 
-        Debug.DrawRay(GravityController.main.transform.position, downDirection * 10, Color.blue);
+        Debug.DrawRay(ArenaController.main.transform.position, downDirection * 10, Color.blue);
 
         if (ps)
         {
@@ -342,8 +342,6 @@ public class CarController : MonoBehaviour
         }
     }
 
-
-
     private IEnumerator RotateCarUpright()
     {
         isRotating = true;
@@ -426,7 +424,7 @@ public class CarController : MonoBehaviour
         wheelRb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
         wheelMesh.convex = true;
 
-        GravityController.main.AddRigidbody(wheelRb);
+        ArenaController.main.AddRigidbody(wheelRb);
 
         wheelRb.AddForce((UnityEngine.Random.onUnitSphere.normalized * 10) + rb.velocity, ForceMode.VelocityChange);
     }
