@@ -30,7 +30,7 @@ public class AbilityController : MonoBehaviour
     private void Start()
     {
         carController = GetComponent<CarController>();
-        abilityContainer = GameObject.Find("AbilityContainer").transform;
+        //abilityContainer = GameObject.Find("AbilityContainer").transform;
         currentCooldown = abilityCooldown;
     }
 
