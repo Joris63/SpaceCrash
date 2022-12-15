@@ -39,6 +39,8 @@ public class CarController : MonoBehaviour
     public bool isGrounded { get; private set; } = false;
     public Vector3 downDirection { get; private set; }
     public float currentSpeed { get; private set; } // magnitude of vehicle
+    public float boostDeactivateTime { get; set; }
+    public float timeAlive { get; private set; } = 0;
 
     // ---------------
     // Private variables
@@ -122,6 +124,8 @@ public class CarController : MonoBehaviour
             return;
         }
 
+        timeAlive += Time.deltaTime;
+
         if (useSinglePlayerInputs && !isBot)
         {
             float horizontal = Input.GetAxis("Horizontal");
@@ -195,9 +199,22 @@ public class CarController : MonoBehaviour
         return false;
     }
 
+    private void CapSpeed()
+    {
+        float speed = rb.velocity.magnitude;
+
+        Debug.Log(speed);
+        if (speed > maxSpeed && boostDeactivateTime < timeAlive)
+        {
+            Debug.Log("reduce speed");
+            rb.velocity -= 0.01f * rb.velocity;
+        }
+    }
+
     private void HandleMove()
     {
         StabilizeCar();
+        CapSpeed();
 
         if (!isGrounded && carAngle > .85f && unflipCarInput)
         {
@@ -211,7 +228,6 @@ public class CarController : MonoBehaviour
     {
         if (!CheckIfGrounded(false) && CheckFalling())
         {
-
             Vector3 locUp = transform.up;
             Vector3 wsUp = -downDirection;
             Vector3 axis = Vector3.Cross(locUp, wsUp);

@@ -343,7 +343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 273e952b3e252de46ba751991bfeddba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 100
+  maxSpeed: 50
   maxTorquePower: 10000
   torqueCurve:
     serializedVersion: 2
@@ -435,7 +435,7 @@ MonoBehaviour:
     m_Bits: 256
   centerOfMass: {fileID: 761031249813590684}
   isBot: 0
-  stabilizationTorque: 15000
+  stabilizationTorque: 20000
   downForce: 5
   flipDuration: 0.8
   useSinglePlayerInputs: 1

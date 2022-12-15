@@ -317,21 +317,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5744906533498427745, guid: 2a42f21b5754a49458fe15593fb7bc1b,
-        type: 3}
-      propertyPath: rotationSpeedMultiplierCurve.m_Curve.Array.data[1].time
-      value: 0.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 5744906533498427745, guid: 2a42f21b5754a49458fe15593fb7bc1b,
-        type: 3}
-      propertyPath: rotationSpeedMultiplierCurve.m_Curve.Array.data[0].value
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5744906533498427745, guid: 2a42f21b5754a49458fe15593fb7bc1b,
-        type: 3}
-      propertyPath: rotationSpeedMultiplierCurve.m_Curve.Array.data[1].value
-      value: 0.1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a42f21b5754a49458fe15593fb7bc1b, type: 3}
 --- !u!1 &315127320
@@ -817,18 +802,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
         type: 3}
-      propertyPath: speed
-      value: 7
+      propertyPath: torqueCurve.m_Curve.Array.size
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
         type: 3}
-      propertyPath: stability
+      propertyPath: torqueCurve.m_Curve.Array.data[3].time
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
         type: 3}
-      propertyPath: stabilizationTorque
-      value: 15000
+      propertyPath: torqueCurve.m_Curve.Array.data[4].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
+        type: 3}
+      propertyPath: torqueCurve.m_Curve.Array.data[3].inSlope
+      value: -3.3333333
+      objectReference: {fileID: 0}
+    - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
+        type: 3}
+      propertyPath: torqueCurve.m_Curve.Array.data[4].inSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
+        type: 3}
+      propertyPath: torqueCurve.m_Curve.Array.data[3].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
+        type: 3}
+      propertyPath: torqueCurve.m_Curve.Array.data[3].outSlope
+      value: -3.3333333
+      objectReference: {fileID: 0}
+    - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
+        type: 3}
+      propertyPath: torqueCurve.m_Curve.Array.data[4].outSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
+        type: 3}
+      propertyPath: torqueCurve.m_Curve.Array.data[3].outWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8693378686889218622, guid: 33ef27059adcbbc4aac9d52bcba7762d,
+        type: 3}
+      propertyPath: torqueCurve.m_Curve.Array.data[3].tangentMode
+      value: 34
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33ef27059adcbbc4aac9d52bcba7762d, type: 3}
