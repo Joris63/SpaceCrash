@@ -36,7 +36,7 @@ public class Pad : MonoBehaviour
         ParticleSystemRenderer psRenderer = ps.GetComponent<ParticleSystemRenderer>();
         ParticleSystem particleSys = ps.GetComponent<ParticleSystem>();
         ParticleSystem.ShapeModule shape = particleSys.shape;
-        Vector3 upDir = (GravityController.main.transform.position - ps.transform.position).normalized;
+        Vector3 upDir = (ArenaController.main.transform.position - ps.transform.position).normalized;
 
         shape.rotation = Quaternion.LookRotation(upDir).eulerAngles;
 
