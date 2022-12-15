@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TargetIndicator : MonoBehaviour
+public class TargetIndicatorO : MonoBehaviour
 {
     public Texture topLeftBorder;
     public Texture bottomLeftBorder;

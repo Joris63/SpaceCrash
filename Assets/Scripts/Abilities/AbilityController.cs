@@ -8,6 +8,9 @@ public class AbilityController : MonoBehaviour
     [Tooltip("The list of abilities of which a random one will be given to the player everytime the cooldown ends.")]
     [SerializeField] private List<Ability> availableAbilities;
 
+    [Header("Debug Settings")]
+    public bool useSinglePlayerInputs = false;
+
     private CarController carController;
     [HideInInspector] public HUD hud;
     [HideInInspector] public Camera playerCamera;
@@ -16,6 +19,7 @@ public class AbilityController : MonoBehaviour
     private float currentCooldown;
     private bool handledDestroyed = false;
     private bool carBecameDriveable = false;
+
 
     public int playerIndex
     {
@@ -75,10 +79,12 @@ public class AbilityController : MonoBehaviour
 
     public void UseAbility()
     {
+        /*
         if (currentAbility && !carController.isDestroyed)
         {
             currentAbility.Activated();
         }
+        */
     }
 
     public void AbilityEnded()
