@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class AffectedObject
 {
+    public float timeInCenterSphere = 0f;
     public Rigidbody rigidbody = null;
     public CarHealth carHealth = null;
 }
@@ -18,6 +19,9 @@ public class ArenaController : MonoBehaviour
 
     [Header("Gravity")]
     public bool inverted = false;
+
+    [Header("Healing Sphere")]
+    public AnimationCurve speedMultiplierCurve;
 
     private float healingSphereRadius;
 
@@ -68,8 +72,10 @@ public class ArenaController : MonoBehaviour
 
             if (distanceFromCenter <= healingSphereRadius)
             {
+                obj.timeInCenterSphere += Time.deltaTime;
+
                 // Limit speed 
-                obj.rigidbody.velocity = (20 / C.MPHMult) * obj.rigidbody.velocity.normalized;
+                obj.rigidbody.velocity = (speedMultiplierCurve.Evaluate(obj.timeInCenterSphere) / C.MPHMult) * obj.rigidbody.velocity.normalized;
 
                 Debug.Log(obj.carHealth);
                 if (obj.carHealth != null && !obj.carHealth.isHealing)
