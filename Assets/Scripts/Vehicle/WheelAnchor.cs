@@ -6,7 +6,7 @@ using UnityEditor;
 
 public class WheelAnchor : MonoBehaviour
 {
-    [SerializeField] private float hoverHeight = 0.5f;
+    public float hoverHeight = 0.5f;
     [SerializeField] private float springStrength = 25f;
     [SerializeField] private float springDamping = 3f;
     [SerializeField] private float grip = 0.5f;
@@ -14,7 +14,8 @@ public class WheelAnchor : MonoBehaviour
 
     public Transform wheelView { get; private set; }
 
-    public bool isGrounded { get; private set; }
+    [HideInInspector] public bool isGrounded { get; private set; }
+    [HideInInspector] public RaycastHit hit;
 
     private CarController controller;
     private float torqueForce;
@@ -27,7 +28,7 @@ public class WheelAnchor : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!Physics.Raycast(transform.position, -transform.up, out RaycastHit hit, hoverHeight, controller.ground))
+        if (!Physics.Raycast(transform.position, -transform.up, out hit, hoverHeight, controller.ground))
         {
             isGrounded = false;
             return;
