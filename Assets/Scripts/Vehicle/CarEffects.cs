@@ -35,30 +35,11 @@ public class CarEffects : MonoBehaviour
     {
         WheelHit leftHit;
         WheelHit rightHit;
-
-        car.rearLeftWheel.wheelCollider.GetGroundHit(out leftHit);
-        car.rearRightWheel.wheelCollider.GetGroundHit(out rightHit);
-
-        if (leftHit.point != Vector3.zero) rearLeftRenderer.transform.position = leftHit.point;
-        if (rightHit.point != Vector3.zero) rearRightRenderer.transform.position = rightHit.point;
     }
 
     private void CheckDrift()
     {
-        float actualSpeed = car.currentSpeed * (car.carConfig.speedType == SpeedType.KPH ? C.KPHMult : C.MPHMult);
-
-        if (car.handBrakeInput && !isDrifting && actualSpeed >= 25f && !car.isDestroyed && car.isGrounded)
-        {
-            isDrifting = true;
-            carSound.PlayDriftSound();
-            StartEmitter();
-        }
-        else if ((!car.handBrakeInput && isDrifting) || actualSpeed <= 25f || car.isDestroyed || !car.isGrounded)
-        {
-            isDrifting = false;
-            carSound.StopDriftSound();
-            StopEmitter();
-        }
+        
     }
 
     private void StartEmitter()

@@ -28,7 +28,6 @@ public class PadsController : MonoBehaviour
     {
         if (!currentlyActive)
         {
-            Debug.Log("Start Delay");
             StartCoroutine(GetReadyForActivation());
         }
     }
@@ -39,7 +38,6 @@ public class PadsController : MonoBehaviour
 
         yield return new WaitForSeconds(activationDelay + transitionTime);
 
-        Debug.Log("Activate Pad");
         StartCoroutine(ActivatePads());
     }
 
@@ -71,8 +69,6 @@ public class PadsController : MonoBehaviour
 
     private void ResetPads()
     {
-        Debug.Log("Deactivate Pad");
-
         deactivatedPads = pads.ToList();
         activatedPads.Clear();
 

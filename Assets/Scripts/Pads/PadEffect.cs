@@ -11,6 +11,5 @@ public class PadEffect : ScriptableObject
 
     public virtual void ApplyEffect(Rigidbody car) 
     {
-        Debug.Log("Apply Effect");
     }
 }
