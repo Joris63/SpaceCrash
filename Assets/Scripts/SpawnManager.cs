@@ -45,9 +45,10 @@ public class SpawnManager : MonoBehaviour
     private bool first = true;
     private void SpawnCar(Transform spawnPoint)
     {
-        CarController car = Instantiate(CarPrefab, spawnPoint.position, spawnPoint.rotation, CarContainer).GetComponent<CarController>();
-        car.driveable = first;
-        car.isBot = first;
+        Vector3 dir = Arena.position - spawnPoint.position;
+        CarController car = Instantiate(CarPrefab, spawnPoint.position, Quaternion.LookRotation(spawnPoint.right, dir), CarContainer).GetComponent<CarController>();
+        GravityController.main.AddRigidbody(car.gameObject.GetComponent<Rigidbody>());
+        car.isBot = !first;
 
         first = false;
     }
